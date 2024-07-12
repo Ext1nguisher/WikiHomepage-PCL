@@ -1,24 +1,3 @@
-﻿<!--
-             FFFFFFFFFFFFFFFF        HHH         HHH             GGGGGGGGG
-           FFFF                      HHH         HHH           GGG
-            FFF                      HHH         HHH         GG
-            FFF       FFFFFFFF       HHH         HHH         GG
-             FFFFFFFFFFF             HHHHHHHHHHHHHHH         GG         GGGGGGGG
-             FFF                     HHH         HHH         GG               GGG
-             FFF                     HHH         HHH          GG              GG
-             FFF                     HHH         HHH            GG         GGG
-             FFF                     HHH         HHH              GGGGGGGGGG
--->
-
-
-
-
-
-
-
-
-
-
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False"  IsSwaped="false">
    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2">
     </StackPanel>
@@ -109,6 +88,17 @@
                     Height="21" Margin="0,5,2,0" Panel.ZIndex="2" HorizontalAlignment="Right"
                     ToolTip="点此刷新" EventType="刷新主页" VerticalAlignment="Bottom" />
 </local:MyCard>
+﻿<!-- 
+             FFFFFFFFFFFFFFFF        HHH         HHH             GGGGGGGGG
+           FFFF                      HHH         HHH           GGG
+            FFF                      HHH         HHH         GG
+            FFF       FFFFFFFF       HHH         HHH         GG
+             FFFFFFFFFFF             HHHHHHHHHHHHHHH         GG         GGGGGGGG
+             FFF                     HHH         HHH         GG               GGG
+             FFF                     HHH         HHH          GG              GG
+             FFF                     HHH         HHH            GG         GGG
+             FFF                     HHH         HHH              GGGGGGGGGG
+-->
 
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
         <Rectangle Width="2000" Height="380"  Panel.ZIndex="1" Margin="0">
