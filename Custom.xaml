@@ -1,5 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE PLAINCRAFTLAUNCHERHOMEPAGE>
+
+
+
+
+
+
+
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False"  IsSwaped="false">
    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2">
     </StackPanel>
