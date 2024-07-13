@@ -1,14 +1,68 @@
-﻿<!-- 
-             FFFFFFFFFFFFFFFF        HHH         HHH             GGGGGGGGG
-           FFFF                      HHH         HHH           GGG
-            FFF                      HHH         HHH         GG
-            FFF       FFFFFFFF       HHH         HHH         GG
-             FFFFFFFFFFF             HHHHHHHHHHHHHHH         GG         GGGGGGGG
-             FFF                     HHH         HHH         GG               GGG
-             FFF                     HHH         HHH          GG              GG
-             FFF                     HHH         HHH            GG         GGG
-             FFF                     HHH         HHH              GGGGGGGGGG
--->
+<!--        FFFFFFFFFFFFFFFF       HHH              HHH             GGGGGGGGG
+           FFFF                                 HHH             HHH           GGG
+            FFF                                 HHH               HHH         GG
+            FFF            FFFFFFFF       HHH              HHH         GG
+             FFFFFFFFFFF                  HHHHHHHHHHH         GG             GGGGGGG
+             FFF                                 HHH              HHH         GG                  GGGGG
+            FFF                                  HHH              HHH          GG                       GG
+             FFF                                 HHH              HHH            GG                    GG
+             FFF                                 HHH              HHH              GGGGGGGGGG    -->
+
+<!-- 借鉴主页内容:MFn233,简单主页
+                               wkea,MINECRAFT皮肤推荐
+                               雨杉楠,炽翎主页
+                               Light-Beacon,新闻主页
+                               在此对他们表示尊重和感谢!  -->
+
+<StackPanel.Resources>
+    <Style TargetType="TextBlock" x:Key="Text">
+        <Setter Property="FontWeight" Value="ExtraBold"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontFamily" Value="Minecraft AE Pixel"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="Path" x:Key="AnimatedPathStyle">
+        <Setter Property="Fill" Value="{DynamicResource ColorBrush4}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Fill" Value="{DynamicResource ColorBrush2}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</StackPanel.Resources>
+<StackPanel.Triggers>
+    <EventTrigger RoutedEvent="StackPanel.Loaded" >
+        <BeginStoryboard>
+            <Storyboard x:Name="animation" RepeatBehavior="Forever" >
+                <ColorAnimation BeginTime="0:0:2"
+                    Storyboard.TargetName="Text1"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#008000" To="#00000000" Duration="0:0:3"/>
+                <ColorAnimation BeginTime="0:0:14"
+                    Storyboard.TargetName="Text1"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#006400" Duration="0:0:3"/>
+                <ColorAnimation BeginTime="0:0:4"
+                    Storyboard.TargetName="Text2"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#008000" Duration="0:0:3"/>
+                <ColorAnimation BeginTime="0:0:7"
+                    Storyboard.TargetName="Text2"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#006400" To="#00000000" Duration="0:0:3"/>
+                <ColorAnimation BeginTime="0:0:9"
+                    Storyboard.TargetName="Text3"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#008000" Duration="0:0:3"/>
+                <ColorAnimation BeginTime="0:0:12"
+                    Storyboard.TargetName="Text3"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#006400" To="#00000000" Duration="0:0:3"/>
+            </Storyboard>
+        </BeginStoryboard>
+    </EventTrigger>
+</StackPanel.Triggers>
 
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False"  IsSwaped="false">
    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2">
@@ -27,8 +81,8 @@
       Foreground="#fff" 
       FontSize="24">
    </TextBlock>
-  <TextBlock  Margin="50,50,0,15" 
-     FontFamily="Minecraft" 
+  <TextBlock  Margin="50,40,0,20" 
+     FontFamily="Minecraft AE Pixel" 
      Panel.ZIndex="2" 
      Text="An GodApple a day,keeps PvPers away!!" 
      Foreground="#fff" 
@@ -40,6 +94,15 @@
            BlurRadius="30" 
            Opacity="1" />
     </TextBlock.Effect>
+     <TextBlock x:Name="Text1" Style="{StaticResource Text}" Foreground="#008000" Margin="-240,25,0,-25">
+        缝合怪主页~
+    </TextBlock>
+    <TextBlock x:Name="Text2" Style="{StaticResource Text}" Foreground="#00000000" Margin="-250,25,0,-25">
+        简约,实用,美观
+    </TextBlock>
+    <TextBlock x:Name="Text3" Style="{StaticResource Text}" Foreground="#00000000" Margin="-260,25,0,-25">
+        小学牲作者awa
+    </TextBlock>
 </TextBlock>
     
    <StackPanel Orientation="Horizontal" Margin="86,66,0,0" Panel.ZIndex="3">
@@ -92,9 +155,10 @@
      <!--此处借鉴了MFn233大佬的创意,多多感谢~~~-->
      <local:MyIconButton LogoScale="1.2"         
                     Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46                           8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"
-                    Height="21" Margin="0,5,32,0" ToolTip="这里暂时啥也没做"
-                    EventData="这里暂时啥也没做awa" Panel.ZIndex="2" HorizontalAlignment="Right"
-                    EventType="这里暂时啥也没做awa" VerticalAlignment="Bottom" />
+                    Height="21" Margin="0,5,32,0" ToolTip="关于这个主页"
+                    EventData="关于这个主页|我是仿生猫梦见苦力怕,一个不自量力的小学生。\n这个主页由我设计，里面包含了丰富的内容。\n你可以自己尝试修改，特别是其中启动游戏的命令EventData,必须要自己修改才能生效。\n感谢您选择这个主页，历时两个月设计，期间本人成功增重5斤，幸甚至哉awa" 
+                    Panel.ZIndex="2" HorizontalAlignment="Right"
+                    EventType="弹出窗口" VerticalAlignment="Bottom" />
       <local:MyIconButton LogoScale="1.2"
                     Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"
                     Height="21" Margin="0,5,2,0" Panel.ZIndex="2" HorizontalAlignment="Right"
