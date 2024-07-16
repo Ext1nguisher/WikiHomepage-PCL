@@ -64,10 +64,10 @@
     </EventTrigger>
 </StackPanel.Triggers>
 
+<Viewbox Stretch="Uniform">
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False"  IsSwaped="false">
-   <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2">
-    </StackPanel>
-     <Rectangle Width="2000" Height="100"  Panel.ZIndex="1">
+   <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2"/>
+     <Rectangle Width="800" Height="100"  Panel.ZIndex="1">
             <Rectangle.Fill>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#B837FA" Offset="0.0"/>
@@ -164,9 +164,11 @@
                     Height="21" Margin="0,5,2,0" Panel.ZIndex="2" HorizontalAlignment="Right"
                     ToolTip="点此刷新" EventType="刷新主页" VerticalAlignment="Bottom" />
 </local:MyCard>
+</Viewbox>
 
-<local:MyCard Title="" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
-        <Rectangle Width="2000" Height="380"  Panel.ZIndex="1" Margin="0">
+<Viewbox Stretch="Uniform">
+<local:MyCard Title="" Margin="0,20,0,15" CanSwap="False" IsSwaped="False">
+        <Rectangle Width="1000" Height="300"  Panel.ZIndex="1" Margin="0,-30,0,0">
             <Rectangle.Fill>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#B837FA" Offset="0.0"/>
@@ -174,7 +176,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Grid Margin="10,-330,0,0" Panel.ZIndex="2">
+        <Grid Margin="0,-290,0,0" Panel.ZIndex="2"  HorizontalAlignment="Center">
               <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="380"/>
                 <ColumnDefinition Width="100"/>
@@ -187,39 +189,40 @@
                  FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
               <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
          </Grid>
-	<StackPanel Margin="25,40,23,15" Panel.ZIndex="2">
-		<local:MyListItem  Margin="-5,2,-5,8"
+	<StackPanel Margin="25,10,23,0" Panel.ZIndex="2">
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
 		            EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" 
 			    ToolTip="IP地址:baidu.com"/>
-		<local:MyListItem  Margin="-5,2,-5,8"
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="https://zh.minecraft.wiki/images/Wiki.png" Title="我的世界wiki" Info="我的世界百科"
 		            EventType="打开网页" EventData="https://zh.minecraft.wiki" Type="Clickable" 
 			    ToolTip="IP地址:zh.minecraft.wiki(非fandom)"/>
-		<local:MyListItem  Margin="-5,2,-5,8"
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="https://static.hdslb.com/images/favicon.ico" Title="B站" Info="哔哩哔哩 (゜-゜)つロ 干杯~"
 		            EventType="打开网页" EventData="https://www.bilibili.com" Type="Clickable" 
 			    ToolTip="IP地址:www.bilibili.com"/>
-		<local:MyListItem  Margin="-5,2,-5,8"
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="https://zh.minecraft.wiki/images/thumb/Minecraft_franchise_icon.png/240px-Minecraft_franchise_icon.png" Title="我的世界官网" Info="我的世界官网"
 		            EventType="打开网页" EventData="https://minecraft.net" Type="Clickable"
 			    ToolTip="IP地址:minecraft.net(非网易)"/>
-		<local:MyListItem  Margin="-5,2,-5,8"
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="pack://application:,,,/images/Blocks/Grass.png" Title="我的世界找服网" Info="服务器大全"
 		            EventType="打开网页" EventData="https://mczfw.cn" Type="Clickable"
 			    ToolTip="IP地址:mczfw.cn"/>
-		<local:MyListItem  Margin="-5,2,-5,8"
+		<local:MyListItem  Margin="-5,0,-5,0"
 		            Logo="https://cn.bing.com/favicon.ico" Title="必应" Info="有求必应"
 		            EventType="打开网页" EventData="https://cn.bing.com" Type="Clickable"
 			    ToolTip="IP地址:cn.bing.com"/>
 	</StackPanel>
 </local:MyCard>
+</Viewbox>
 
-
+<Viewbox Stretch="Uniform">
 <local:MyCard Title="" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
 
 	<StackPanel Margin="0,40,23,0">
-         <Rectangle Width="2000" Height="300" Margin="0,-40,-23,0">
+         <Rectangle Width="940" Height="300" Margin="0,-40,-23,0" Stretch="fill">
             <Rectangle.Fill>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#B837FA" Offset="0.0"/>
@@ -290,7 +293,7 @@
                    Margin="0,0,0,0" 
                    Source="https://zh.minecraft.wiki/images/thumb/MC_square_key_art.jpg/240px-MC_square_key_art.jpg" 
                    Panel.ZIndex="2" Width="170"/>
-                <Rectangle Width="210" Height="40" 
+                <Rectangle Width="170" Height="40" 
                    HorizontalAlignment="left" Margin="0,0,0,0"  
                    IsHitTestVisible="False" Panel.ZIndex="2">
                 <Rectangle.Fill>
@@ -300,8 +303,8 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
                 </Rectangle>
-                <local:MyButton Width="210" Height="40" 
-                HorizontalAlignment="left" Margin="0,-40,0,0" 
+                <local:MyButton Width="170" Height="40" 
+                HorizontalAlignment="left" Margin="0,-40,40,0" 
                 Panel.ZIndex="1" Text="" 
                 EventType="启动游戏" 
                 EventData="1.20.1-Fabric_0.14.22-OptiFine_I5" />
@@ -312,7 +315,7 @@
               
             <StackPanel Margin="440,0,170,0" HorizontalAlignment="left">
             <Image HorizontalAlignment="left" Margin="0,-325,65,0" Source="https://zh.minecraft.wiki/images/thumb/Bedrock_Edition_icon_2.png/240px-Bedrock_Edition_icon_2.png" Panel.ZIndex="1" Width="177"/>
-                <Rectangle Width="177" Height="35" HorizontalAlignment="left" Margin="0,-120,0,0" Panel.ZIndex="2" IsHitTestVisible="False">
+                <Rectangle Width="177" Height="35" HorizontalAlignment="left" Margin="0,-120,65,0" Panel.ZIndex="2" IsHitTestVisible="False">
                 <Rectangle.Fill>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                         <GradientStop Color="#08C0FB" Offset="0.0" />
@@ -320,11 +323,11 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <local:MyButton Width="177" Height="35" HorizontalAlignment="left" Margin="0,-120,0,0" Panel.ZIndex="1" Padding="25,0,25,0" Text="" EventType="打开文件" EventData="shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App" />
-            <TextBlock FontSize="26" FontWeight="Normal" HorizontalAlignment="left" FontFamily="微软雅黑" Margin="8,-78,0,0" IsHitTestVisible="False" Panel.ZIndex="2" Text="Minecraft BE" />
+            <local:MyButton Width="177" Height="35" HorizontalAlignment="left" Margin="0,-120,65,0" Panel.ZIndex="1" Padding="25,0,25,0" Text="" EventType="打开文件" EventData="shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App" />
+            <TextBlock FontSize="26" FontWeight="Normal" HorizontalAlignment="Center" FontFamily="微软雅黑" Margin="0,-78,60,0" IsHitTestVisible="False" Panel.ZIndex="2" Text="Minecraft BE" />
             </StackPanel>
    </StackPanel>
-   <Grid Margin="0,-230,20,15" Panel.ZIndex="2" HorizontalAlignment="Right">
+   <Grid Margin="640,-230,-20,15" Panel.ZIndex="2" HorizontalAlignment="Left">
           <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="60"/>
                 <ColumnDefinition Width="100"/>
@@ -337,11 +340,6 @@
                  FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
           <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
     </Grid>
-    <Calendar HorizontalAlignment="Right" Margin="0,60,35,0" />
+    <Calendar HorizontalAlignment="Left" Margin="660,60,-20,0" />
 </local:MyCard>
-
-
-
-
-
-
+</Viewbox>
