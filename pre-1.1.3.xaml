@@ -1,0 +1,422 @@
+﻿<!--        FFFFFFFFFFFFFFFF       HHH              HHH             GGGGGGGGG
+           FFFF                                 HHH             HHH           GGG
+            FFF                                 HHH               HHH         GG
+            FFF            FFFFFFFF       HHH              HHH         GG
+             FFFFFFFFFFF                  HHHHHHHHHHH         GG             GGGGGGG
+             FFF                                 HHH              HHH         GG                  GGGGG
+            FFF                                  HHH              HHH          GG                       GG
+             FFF                                 HHH              HHH            GG                    GG
+             FFF                                 HHH              HHH              GGGGGGGGGG    -->
+
+<!-- 借鉴主页内容:MFn233,简单主页
+                               wkea,MINECRAFT皮肤推荐
+                               雨杉楠,炽翎主页
+                               Light-Beacon,新闻主页
+                               在此对他们表示尊重和感谢!  -->
+
+<StackPanel.Resources>
+    <Style TargetType="TextBlock" x:Key="Text">
+        <Setter Property="FontWeight" Value="ExtraBold"/>
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="FontFamily" Value="Minecraft AE Pixel"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="Path" x:Key="AnimatedPathStyle">
+        <Setter Property="Fill" Value="{DynamicResource ColorBrush4}"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Fill" Value="{DynamicResource ColorBrush2}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</StackPanel.Resources>
+<StackPanel.Triggers>
+    <EventTrigger RoutedEvent="StackPanel.Loaded" >
+        <BeginStoryboard>
+            <Storyboard x:Name="animation" RepeatBehavior="Forever" >
+                <ColorAnimation BeginTime="0:0:2"
+                    Storyboard.TargetName="Text1"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#008000" To="#00000000" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text1"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text1"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+                <ColorAnimation BeginTime="0:0:14"
+                    Storyboard.TargetName="Text1"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#006400" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text1"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text1"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+                <ColorAnimation BeginTime="0:0:4"
+                    Storyboard.TargetName="Text2"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#008000" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text2"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text2"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+                <ColorAnimation BeginTime="0:0:7"
+                    Storyboard.TargetName="Text2"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#006400" To="#00000000" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text2"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text2"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+                <ColorAnimation BeginTime="0:0:9"
+                    Storyboard.TargetName="Text3"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#00000000" To="#008000" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text3"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text3"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+                <ColorAnimation BeginTime="0:0:12"
+                    Storyboard.TargetName="Text3"
+                    Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+                    From="#006400" To="#00000000" Duration="0:0:3"/>
+             <DoubleAnimation BeginTime="0:0:2.500"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text3"
+               Storyboard.TargetProperty="FontSize" 
+               From="22" To="30" />
+             <DoubleAnimation BeginTime="0:0:3"
+               Duration="0:0:0.300" 
+               Storyboard.TargetName="Text3"
+               Storyboard.TargetProperty="FontSize" 
+               From="30" To="22" />
+            </Storyboard>
+        </BeginStoryboard>
+    </EventTrigger>
+</StackPanel.Triggers>
+
+<Viewbox Stretch="Uniform">
+<local:MyCard Title="" Margin="0,-12,0,15" CanSwap="False"  IsSwaped="false" Height="100">
+   <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-175,0,0"  Panel.ZIndex="2"/>
+     <!--<Rectangle Width="800" Height="100"  Panel.ZIndex="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#B837FA" Offset="0.0"/>
+                    <GradientStop Color="#15ECFF" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle> -->
+   <TextBlock  Margin="50,20,0,15"  
+      Panel.ZIndex="2" 
+      Text="欢迎使用mcnmsl的主页！ " 
+      Foreground="#000"
+      FontSize="24">
+   </TextBlock>
+  <TextBlock  Margin="50,40,0,20" 
+     FontFamily="Minecraft AE Pixel" 
+     Panel.ZIndex="2" 
+     Text="An GodApple a day,keeps PvPers away!!"  
+     FontSize="13">
+    <TextBlock.Effect>
+        <DropShadowEffect  Color="#fff" 
+           Direction="320" 
+           ShadowDepth="0" 
+           BlurRadius="30" 
+           Opacity="1" />
+    </TextBlock.Effect>
+     <TextBlock x:Name="Text1" Style="{StaticResource Text}" Foreground="#008000" Margin="-240,25,0,-25">
+        缝合怪主页~
+    </TextBlock>
+    <TextBlock x:Name="Text2" Style="{StaticResource Text}" Foreground="#00000000" Margin="-250,25,0,-25">
+        简约,实用,美观
+    </TextBlock>
+    <TextBlock x:Name="Text3" Style="{StaticResource Text}" Foreground="#00000000" Margin="-260,25,0,-25">
+        小学牲作者awa
+    </TextBlock>
+</TextBlock>
+    
+   <StackPanel Orientation="Horizontal" Margin="86,66,0,0" Panel.ZIndex="3">
+         <Rectangle Width="100" Height="35" HorizontalAlignment="left" 
+           Margin="300,-60,20,4" Panel.ZIndex="2" 
+           IsHitTestVisible="False">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#008000" Offset="0.0" />
+                        <GradientStop Color="#006400" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        <local:MyButton Margin="-120,-60,20,4" 
+          ColorType="Highlight" 
+          Width="100" Height="35"
+          Text="" EventType="今日人品" 
+          EventData="触发对应功能" />
+         <TextBlock FontSize="20" FontWeight="Bold" 
+            MaxWidth="449" HorizontalAlignment="Center" 
+            FontFamily="微软雅黑" Margin="-140,-30,0,0" 
+            IsHitTestVisible="False" Panel.ZIndex="2" 
+            Text="今日人品"  Foreground="#fff"/>
+
+	 <Rectangle Width="100" Height="35" HorizontalAlignment="left" 
+           Margin="0,-60,20,4" Panel.ZIndex="2" 
+           IsHitTestVisible="False">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#008000" Offset="0.0" />
+                        <GradientStop Color="#006400" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+         <local:MyButton Margin="-120,-60,20,4" ColorType="Highlight" Width="100" Height="35" Panel.ZIndex="1" Text="" EventType="清理垃圾" ToolTip="清理PCL内部残余的缓存垃圾" EventData="触发对应功能"/>
+	<TextBlock FontSize="20" FontWeight="Bold" MaxWidth="449" HorizontalAlignment="Center" FontFamily="微软雅黑" Margin="-140,-30,0,0" IsHitTestVisible="False" Panel.ZIndex="2" Text="清理垃圾"  Foreground="#fff"/>
+
+	<Rectangle Width="100" Height="35" HorizontalAlignment="left" Margin="0,-60,20,4" Panel.ZIndex="2" IsHitTestVisible="False">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#008000" Offset="0.0" />
+                        <GradientStop Color="#006400" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+	<local:MyButton Margin="-140,-60,0,4" ColorType="Highlight" Width="100" Height="35"
+                    Text="" EventType="内存优化" EventData="将物理内存占用降低约1/3,不仅限于MC!" ToolTip="将物理内存占用降低约1/3,不仅限于MC!"/>
+	<TextBlock FontSize="20" FontWeight="Bold" MaxWidth="449" HorizontalAlignment="Center" FontFamily="微软雅黑" Margin="-140,-30,0,0" IsHitTestVisible="False" Panel.ZIndex="2" Text="内存优化"  Foreground="#fff"/>
+    </StackPanel>
+     <!--此处借鉴了MFn233大佬的创意,多多感谢~~~-->
+     <local:MyIconButton LogoScale="1.2"         
+                    Logo="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46                           8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"
+                    Height="21" Margin="0,5,32,0" ToolTip="关于这个主页"
+                    EventData="关于这个主页|我是仿生猫梦见苦力怕,一个不自量力的小学生。\n这个主页由我设计，里面包含了丰富的内容。\n你可以自己尝试修改，特别是其中启动游戏的命令EventData,必须要自己修改才能生效。\n感谢您选择这个主页，历时两个月设计，期间本人成功增重5斤，幸甚至哉awa" 
+                    Panel.ZIndex="2" HorizontalAlignment="Right"
+                    EventType="弹出窗口" VerticalAlignment="Bottom" />
+      <local:MyIconButton LogoScale="1.2"  
+         Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"
+          Height="21" Margin="0,5,2,0" Panel.ZIndex="2" HorizontalAlignment="Right"
+          ToolTip="点此刷新" EventType="刷新主页" VerticalAlignment="Bottom" />
+    <local:MyIconButton LogoScale="1.2" 
+      Logo="M8.75.75V2h.985c.304 0 .603.08.867.231l1.29.736c.038.022.08.033.124.033h2.234a.75.75 0 0 1 0 1.5h-.427l2.111 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.006.005-.01.01-.045.04c-.21.176-.441.327-.686.45C14.556 10.78 13.88 11 13 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L12.178 4.5h-.162c-.305 0-.604-.079-.868-.231l-1.29-.736a.245.245 0 0 0-.124-.033H8.75V13h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5V3.5h-.984a.245.245 0 0 0-.124.033l-1.289.737c-.265.15-.564.23-.869.23h-.162l2.112 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.016.015-.045.04c-.21.176-.441.327-.686.45C4.556 10.78 3.88 11 3 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L2.178 4.5H1.75a.75.75 0 0 1 0-1.5h2.234a.249.249 0 0 0 .125-.033l1.288-.737c.265-.15.564-.23.869-.23h.984V.75a.75.75 0 0 1 1.5 0Zm2.945 8.477c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327Zm-10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327Z" 
+               Height="21" Margin="0,5,52,0" Panel.ZIndex="2" HorizontalAlignment="Right"
+                   ToolTip="本主页采用CC BY-NC-SA 4.0授权" EventType="打开网页" 
+                   EventData="https://creativecommons.org/licenses/by-nc-sa/4.0/" VerticalAlignment="Bottom" />
+</local:MyCard>
+</Viewbox>
+
+<!-- <Viewbox Stretch="Uniform"> -->
+<local:MyCard Title="" Margin="0,-10,0,15" CanSwap="False" IsSwaped="False" Width="360" HorizontalAlignment="Left">
+        <!--<Rectangle Width="360" Height="300"  Panel.ZIndex="1" Margin="0,-30,0,0">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#B837FA" Offset="0.0"/>
+                    <GradientStop Color="#15ECFF" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle> -->
+        <Grid Margin="0,5,0,40" Panel.ZIndex="2"  VerticalAlignment="Top" HorizontalAlignment="Center">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="120"/>
+              </Grid.ColumnDefinitions>
+
+              <Line X1="0" X2="100" Stroke="#B22222" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+              <TextBlock Text="常 用 网 站" Grid.Column="1"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
+              <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+         </Grid>
+	<StackPanel Margin="25,30,23,0" Panel.ZIndex="2">
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
+		            EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" 
+			    ToolTip="IP地址:baidu.com"/>
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="https://zh.minecraft.wiki/images/Wiki.png" Title="我的世界wiki" Info="我的世界百科"
+		            EventType="打开网页" EventData="https://zh.minecraft.wiki" Type="Clickable" 
+			    ToolTip="IP地址:zh.minecraft.wiki(非fandom)"/>
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="https://static.hdslb.com/images/favicon.ico" Title="B站" Info="哔哩哔哩 (゜-゜)つロ 干杯~"
+		            EventType="打开网页" EventData="https://www.bilibili.com" Type="Clickable" 
+			    ToolTip="IP地址:www.bilibili.com"/>
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="https://zh.minecraft.wiki/images/thumb/Minecraft_franchise_icon.png/240px-Minecraft_franchise_icon.png" Title="我的世界官网" Info="我的世界官网"
+		            EventType="打开网页" EventData="https://minecraft.net" Type="Clickable"
+			    ToolTip="IP地址:minecraft.net(非网易)"/>
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="pack://application:,,,/images/Blocks/Grass.png" Title="我的世界找服网" Info="服务器大全"
+		            EventType="打开网页" EventData="https://mczfw.cn" Type="Clickable"
+			    ToolTip="IP地址:mczfw.cn"/>
+		<local:MyListItem  Margin="-5,0,-5,0"
+		            Logo="https://cn.bing.com/favicon.ico" Title="必应" Info="有求必应"
+		            EventType="打开网页" EventData="https://cn.bing.com" Type="Clickable"
+			    ToolTip="IP地址:cn.bing.com"/>
+	</StackPanel>
+</local:MyCard>
+<!-- </Viewbox> -->
+
+<Viewbox Stretch="Uniform">
+<local:MyCard Title="" Margin="0,-10,0,-10" CanSwap="False" IsSwaped="False">
+
+	<StackPanel Margin="0,0,23,0">
+         <!--<Rectangle Width="940" Height="300" Margin="0,-40,-23,0" Stretch="fill">
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#B837FA" Offset="0.0"/>
+                    <GradientStop Color="#15ECFF" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle> -->
+         <Grid Margin="0,10,0,10" Panel.ZIndex="2" VerticalAlignment="Top">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="60"/>
+              </Grid.ColumnDefinitions>
+
+              <Line X1="0" X2="100" Stroke="#B22222" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+              <TextBlock Text="服  务  器" Grid.Column="1"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
+              <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+         </Grid>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
+                    Panel.ZIndex="2" Margin="10,0,0,0">
+		        <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="1"
+                            Text="hyp加速ip线路1" EventType="启动游戏" 
+                            EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|mc.hypixel.win" ToolTip="服务器IP:mc.hypixel.win"/>
+		        <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                            Text="hyp加速ip线路2" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|Hyp.Asia" ToolTip="服务器IP:Hyp.Asia"/>
+		  </StackPanel>
+		    <StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
+                     	Panel.ZIndex="2" Margin="10,0,0,0">
+		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="hyp加速ip线路3" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|hyp-2.xuegao123.xyz" ToolTip="服务器IP:hyp-2.xuegao123.xyz"/>
+		    <local:MyButton Margin="0,4,0,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="Hypixel直连" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|mc.hypixel.net" ToolTip="服务器IP:mc.hypixel.net"/>
+		</StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
+                     Panel.ZIndex="2" Margin="10,0,0,0">
+		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="启动光影 1.20.1" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5" />
+		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="启动光影1.20.4" EventType="启动游戏" EventData="1.20.4-Fabric 0.15.11-OptiFine_I7" ToolTip="有optifine及fabric"/>
+		</StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
+                     Panel.ZIndex="2" Margin="10,0,0,0">
+		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="Vancraft" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|vancraft.cn" ToolTip="服务器IP:vancraft.cn" />
+		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
+                        Text="CN2B2T" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5|2b2t.xin" ToolTip="服务器IP:2b2t.xin" />
+		</StackPanel>
+                 
+              <Grid Margin="230,-190,30,0" Panel.ZIndex="2" VerticalAlignment="Top" HorizontalAlignment="Left">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="130"/>
+              </Grid.ColumnDefinitions>
+
+                <Line X1="0" X2="100" Stroke="#B22222" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0" />
+                <TextBlock Text="版本选择" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Top"
+                   FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
+                <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+                </Grid>
+
+         <StackPanel Margin="230,-160,0,0" HorizontalAlignment="left" VerticalAlignment="Top">
+                <Image HorizontalAlignment="left" 
+                   Margin="0,0,0,0" 
+                   Source="https://zh.minecraft.wiki/images/thumb/MC_square_key_art.jpg/240px-MC_square_key_art.jpg" 
+                   Panel.ZIndex="2" Width="170"/>
+                <Rectangle Width="170" Height="40" 
+                   HorizontalAlignment="left" Margin="0,0,0,0"  
+                   IsHitTestVisible="False" Panel.ZIndex="2">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#08C0FB" Offset="0.0" />
+                            <GradientStop Color="#44FFD9" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <local:MyButton Width="170" Height="40" 
+                       HorizontalAlignment="left" Margin="0,-40,40,0"
+                       Panel.ZIndex="1" Text=""
+                       EventType="启动游戏"
+                       EventData="1.20.1-Fabric_0.14.22-OptiFine_I5" />
+                <TextBlock FontSize="26" FontWeight="Normal" FontFamily="微软雅黑" 
+                       HorizontalAlignment="left" Margin="6,-38,0,0"  Panel.ZIndex="3"
+                       IsHitTestVisible="False" Text="Minecraft JE" />
+        </StackPanel>
+              
+        <StackPanel Margin="420,-212,0,0" HorizontalAlignment="left" VerticalAlignment="Top">
+            <Image HorizontalAlignment="left" Margin="0,0,0,0"
+                   Source="https://zh.minecraft.wiki/images/thumb/Bedrock_Edition_icon_2.png/240px-Bedrock_Edition_icon_2.png"
+                   Panel.ZIndex="1" Width="177"/>
+            <Rectangle Width="177" Height="35" HorizontalAlignment="left" Margin="0,0,0,0"
+                           Panel.ZIndex="2" IsHitTestVisible="False">
+                <Rectangle.Fill>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#08C0FB" Offset="0.0" />
+                        <GradientStop Color="#44FFD9" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <local:MyButton Width="177" Height="35" HorizontalAlignment="left"
+                            Margin="0,-35,0,0" Panel.ZIndex="1" Padding="25,0,25,0"
+                            Text="" EventType="打开文件"
+                            EventData="shell:appsFolder\Microsoft.MinecraftUWP_8wekyb3d8bbwe!App" />
+            <TextBlock FontSize="26" FontWeight="Normal" HorizontalAlignment="Center" FontFamily="微软雅黑"
+                       Margin="0,-35,-5,0" IsHitTestVisible="False" Panel.ZIndex="2" Text="Minecraft BE" />
+        </StackPanel>
+   </StackPanel>
+   <Grid Margin="605,10,-20,40" Panel.ZIndex="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+          <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="60"/>
+          </Grid.ColumnDefinitions>
+
+          <Line X1="0" X2="100" Stroke="#B22222" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="0"/>
+          <TextBlock Text="日     历" Grid.Column="1"
+                 HorizontalAlignment="Center" VerticalAlignment="Center" 
+                 FontSize="20" Foreground="#FFA500" FontWeight="Bold"/>
+          <Line X1="0" X2="100" Stroke="#B837FA" StrokeThickness="1.5" HorizontalAlignment="Center" Stretch="Fill" Grid.Column="2" />
+    </Grid>
+    <Calendar HorizontalAlignment="Left" Margin="615,60,30,0" />
+</local:MyCard>
+</Viewbox>
+
+
+
+
+
+
