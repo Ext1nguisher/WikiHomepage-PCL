@@ -275,16 +275,16 @@
     <!-- <local:MyLoading Margin="0,50" Text="施工中" HorizontalAlignment="Center"/> -->
 
 <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,40,8,0">
-	泥巴是一种大量生成于红树林沼泽的方块,也可通过对泥土及其变种使用水瓶产生。</TextBlock>
-<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,76,8,0">
-	泥巴的方块高度为0.875格,与灵魂沙相同(但泥巴不会造成减速),会使上方的实体下陷2个像素,因此漏斗可以吸取到掉落在泥巴上的掉落物。</TextBlock>
-<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,112,8,0">
-	泥巴的上表面可以种植草,花,粉红色花簇,枯萎的灌木,大型垂滴叶,菌类,菌索,下界苗和杜鹃花丛,树苗,竹子和甜浆果丛能在泥巴上生长,甘蔗和蘑菇也会在符合条件的情况下在泥巴上生长。</TextBlock>
-<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,172,8,0">
-	将泥巴放置在下方挂有滴水石锥的方块上方会使其每随机刻有45⁄256(约17.6%)的概率转化为黏土,平均转化时间为388.4秒。
+	<!-- 1 -->用刷子刷扫热带海底废墟里的可疑的沙子有概率掉落嗅探兽蛋。给两只成年嗅探兽喂食火把花种子使之繁殖后，其中一只会掉落一个嗅探兽蛋。<!-- end_1 --></TextBlock>
+<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,80,8,0">
+	<!-- 2 -->嗅探兽蛋有3个生长阶段，可以通过其纹理的开裂外观来判断。嗅探兽蛋被放置时处于第1阶段。第3阶段的嗅探兽蛋会生成一个幼年嗅探兽并移除自身。<!-- end_2 --></TextBlock>
+<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,140,8,0">
+	<!-- 3 -->嗅探兽蛋总共需要24000游戏刻(1,200秒)至24900游戏刻(1,245秒)来孵化，若下方有苔藓块则需要12000游戏刻(600秒)至12900游戏刻(645秒)来孵化。<!-- end_3 --></TextBlock>
+<TextBlock TextWrapping="Wrap" Foreground="{DynamicResource ColorBrush1}" FontSize="16" Margin="8,200,8,0">
+	<!-- 4 -->不同于海龟蛋，嗅探兽蛋在放置后不会被踩坏，僵尸等亡灵生物也不会寻找嗅探兽蛋并试图摧毁它。<!-- end_4 -->
 </TextBlock>
-<local:MyButton Text="最新更新新闻--By Nattiden" EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Margin="8,220,8,22" Width="240" Height="40" HorizontalAlignment="Left" Background="{DynamicResource ColorBrush3}"/>
-<local:MyButton Text="主页市场--By MFn233" EventType="打开帮助" EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json" Margin="278,220,8,22" Width="240" Height="40" HorizontalAlignment="Left" Background="{DynamicResource ColorBrush3}"/>
+<local:MyButton Text="最新更新新闻--By Nattiden" EventType="打开帮助" EventData="https://news.bugjump.net/News.json" Margin="8,238,8,4" Width="240" Height="40" HorizontalAlignment="Left" Background="{DynamicResource ColorBrush3}"/>
+<local:MyButton Text="主页市场--By MFn233" EventType="打开帮助" EventData="https://mfn233.github.io/PCL-Mainpage-Market/market.json" Margin="278,238,8,4" Width="240" Height="40" HorizontalAlignment="Left" Background="{DynamicResource ColorBrush3}"/>
 
 </local:MyCard>
 </StackPanel>
@@ -327,9 +327,9 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
                      Panel.ZIndex="2" Margin="10,0,0,0">
 		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
-                        Text="启动光影 1.20.1" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5" ToolTip="不一定生效"/>
+                        Text="灵境生存服务器" EventType="启动游戏" EventData="1.20.1-Fabric_0.14.22-OptiFine_I5" ToolTip="mczfw.cn排名靠前"/>
 		    <local:MyButton Margin="0,4,4,0" Width="100" Height="35" Panel.ZIndex="2"
-                        Text="启动光影1.20.4" EventType="启动游戏" EventData="1.20.4-Fabric 0.15.11-OptiFine_I7" ToolTip="不一定生效"/>
+                        Text="启动光影1.20.4" EventType="启动游戏" EventData="1.20.4-Fabric 0.15.11-OptiFine_I7" ToolTip="mczfw.cn排名靠前"/>
 		</StackPanel>
 		<StackPanel Orientation="Horizontal" HorizontalAlignment="left" 
                      Panel.ZIndex="2" Margin="10,0,0,0">
@@ -415,9 +415,4 @@
     <Calendar HorizontalAlignment="Left" Margin="615,60,30,0" />
 </local:MyCard>
 </Viewbox>
-
-
-
-
-
 
