@@ -89,6 +89,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <Setter Property="BorderThickness" Value="4"/>
 <Setter Property="VerticalAlignment" Value="Top"/>
 <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush3}"/>
+</Style>
 <Style TargetType="Border" x:Key="ItemTitleBorder" >
 <Setter Property="Margin" Value="0,-20,-1,10"/>
 <Setter Property="Background" Value="{DynamicResource ColorBrush3}"/>
@@ -97,7 +98,8 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <Setter Property="CornerRadius" Value="7"/>
 <Setter Property="BorderThickness" Value="0,0,0,2"/>
 <Setter Property="BorderBrush" Value="{DynamicResource ColorBrush2}"/>
-</Style><Style TargetType="TextBlock" x:Key="ItemTitleBlock" >
+</Style>
+<Style TargetType="TextBlock" x:Key="ItemTitleBlock" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="TextAlignment" Value="Center"/>
 <Setter Property="VerticalAlignment" Value="Center"/>
