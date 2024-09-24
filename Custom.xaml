@@ -151,29 +151,30 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Brushing_with_Brush.png?f4ef3&amp;format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Ghast_shooting_fireball.png/350px-Ghast_shooting_fireball.png?74731" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/Brushing_with_Brush.png?f4ef3&amp;format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/Ghast_shooting_fireball.png/350px-Ghast_shooting_fireball.png?74731" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="本周页面--刷子" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="本周页面--恶魂" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">刷子</Paragraph>
+<Paragraph Style="{StaticResource H2}">恶魂</Paragraph>
 <List>
-<ListItem><Paragraph>刷子是一种可用于考古和刷扫犰狳的工具。</Paragraph></ListItem>
+<ListItem><Paragraph>恶魂是一种在下界生成的敌对生物。</Paragraph></ListItem>
 
-</List><Paragraph Style="{StaticResource H3}">合成</Paragraph><List>
-<ListItem><Paragraph>在工作台的合成方格中将羽毛,铜锭和木棍依次排成一列即可合成刷子</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List>
+<ListItem><Paragraph>恶魂会在下界荒地、灵魂沙峡谷和玄武岩三角洲生物群系生成，只在拥有足够的空间时才会自然生成，其生成不受到亮度等级的限制。</Paragraph></ListItem>
 
-</List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List>
-<ListItem><Paragraph>玩家可以用刷子刷扫方块。</Paragraph></ListItem>
-<ListItem><Paragraph>对任何方块刷子时，刷子会被平放并左右往复移动，并在目标方块上产生向左抛射的对应方块破坏粒子。</Paragraph></ListItem>
-<ListItem><Paragraph>如果对可疑的方块使用刷子，可疑的方块将会在4.8秒（96游戏刻）后变为沙砾，若为自然生成还会掉落一样物品。</Paragraph></ListItem>
-<ListItem><Paragraph>可疑的方块被刷扫完毕时，刷子会消耗1点耐久度</Paragraph></ListItem>
-<ListItem><Paragraph>刷子亦可用于刷扫成年犰狳以获取<Underline><local:MyTextButton Margin="0,0,0,-8" EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8A%B0%E7%8B%B3%E9%B3%9E%E7%94%B2">犰狳鳞甲</local:MyTextButton></Underline>，每次消耗16点耐久度。</Paragraph></ListItem>
-<ListItem><Paragraph>图为玩家正在用刷子刷扫可疑的沙子。</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">行为</Paragraph><List>
+<ListItem><Paragraph>恶魂会闭着眼睛和嘴巴四处飘浮，还会发出高亢的叫声。</Paragraph></ListItem>
+<ListItem><Paragraph>当恶魂找到攻击目标时，其红色的眼睛和嘴巴会张开，同时会发出持续时间比平常长的叫声，随后向目标发射火球。</Paragraph></ListItem>
+<ListItem><Paragraph>在攻击时恶魂会尝试提升高度，在Java版中，玩家首次距离恶魂16格内时，它们会转向玩家并发射火球。</Paragraph></ListItem>
+<ListItem><Paragraph>当玩家距离其远于64格后或有方块阻挡其视线，恶魂就会停止攻击。</Paragraph></ListItem>
+<ListItem><Paragraph>在基岩版中，恶魂固定攻击距离其28格内的玩家，并在有方块阻挡其视线时停止攻击。</Paragraph></ListItem>
+<ListItem><Paragraph>恶魂被玩家反弹的恶魂火球命中时，会受到1000点(500x♥)的直接命中伤害。</Paragraph></ListItem>
 </List>
+<Paragraph>图为恶魂向玩家发射火球。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -202,8 +203,8 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 Wiki 摘录主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="eb60b51" ToolTip="当前 Commit 版本" EventType="打开网页"
-    EventData="https://github.com/Ext1nguisher/PCLhomepage/commit/eb60b51308d3e6d8432d650d6e24feb112b630ca"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="6a9a75c" ToolTip="当前 Commit 版本" EventType="打开网页"
+    EventData="https://gitee.com/planet_of_daniel/pcl2-homepage-fhg/commit/6a9a75c8e7bd7d99a4e90060a1165e7b97ad33f5"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-4,0,0,10" Height="56">
