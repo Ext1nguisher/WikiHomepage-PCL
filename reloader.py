@@ -18,11 +18,14 @@ def gr():
 
 
 def get_link_txt(txt):
-    raw_links = re.findall(r'<a href=".*?" title=', txt.decode(eventual_encoding='UTF-8'), re.S)
-    links = []
+    raw_links = re.findall(r'<a href=".*?" title=".*?"', txt, re.S)
+    links = {}
     for link in raw_links:
-        links.append("https://zh.minecraft.wiki" +
-                     link[re.search(r'".*?"', link).span()[0]:re.search(r'".*?"', link).span()[1]].strip('"'))
+        key = link[re.search(r'title=".*?"', link).span()[0]:re.search(r'title=".*?"', link).span()[1]]
+        key = key[re.search(r'".*?"', key).span()[0]:re.search(r'".*?"', key).span()[1]].strip('"')
+        links[key] = \
+            ("https://zh.minecraft.wiki" +
+             link[re.search(r'".*?"', link).span()[0]:re.search(r'".*?"', link).span()[1]].strip('"'))
     return links
 
 
@@ -56,4 +59,5 @@ def update():
         f.write(txt)
 
 
-update()
+for r, n in get_link_txt(f'''{obj.find('div', class_="weekly-content")}''').items():
+    print(f'{r}:{n}')
