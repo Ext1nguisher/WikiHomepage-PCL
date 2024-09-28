@@ -55,9 +55,11 @@ def update():
 </Border>''', content_text)
         txt = re.sub(r'<sys:String x:Key="datetime">.*?</sys:String>',
                      f'<sys:String x:Key="datetime">最后更新：{now.strftime("%Y-%m-%d")}</sys:String>', txt)
+        txt = re.sub(r'<sys:String x:Key="WikiPage">.*?</sys:String>', '<sys:String x:Key="WikiPage">' +
+                     list(get_link_txt(f'''{obj.find('div', class_="weekly-content")}''').values())[0] +
+                     "</sys:String>", txt)
         print(txt)
         f.write(txt)
 
 
-for r, n in get_link_txt(f'''{obj.find('div', class_="weekly-content")}''').items():
-    print(f'{r}:{n}')
+update()
