@@ -12,6 +12,11 @@ def while_delete(del_txt, txt):
         txt.remove(del_txt)
 
 
+def get_news_card():
+    resp = requests.get("https://news.bugjump.net/apis/versions/latest-card").text
+    return resp
+
+
 def gr():
     origin = obj.find('div', class_="weekly-content").text
     return origin.strip().split("。")
@@ -58,6 +63,8 @@ def update():
         txt = re.sub(r'<sys:String x:Key="WikiPage">.*?</sys:String>', '<sys:String x:Key="WikiPage">' +
                      list(get_link_txt(f'''{obj.find('div', class_="weekly-content")}''').values())[0] +
                      "</sys:String>", txt)
+        txt = re.sub(r'<!-- NewsCard -->.*?<!-- end_NewsCard -->',
+                     f'<!-- NewsCard -->{get_news_card()}<!-- end_NewsCard -->', txt, re.S)
         print(txt)
         f.write(txt)
 
