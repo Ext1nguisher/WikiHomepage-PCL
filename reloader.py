@@ -19,7 +19,11 @@ def get_news_card():
 
 def gr():
     origin = obj.find('div', class_="weekly-content").text
-    return origin.strip().split("。")
+    result = origin.strip().split("。")
+    result = [i.strip("\n") for i in result]
+    result = [f"<ListItem><Paragraph>{i}。</Paragraph></ListItem>\n" for i in result]
+    result.pop()
+    return result
 
 
 def get_link_txt(txt):
@@ -65,8 +69,10 @@ def update():
                      "</sys:String>", txt)
         txt = re.sub(r'<!-- NewsCard -->.*?<!-- end_NewsCard -->',
                      f'<!-- NewsCard -->{get_news_card()}<!-- end_NewsCard -->', txt, re.S)
+        txt = re.sub(r'<!-- introduction -->.*?<!-- introduction -->',
+                     f)
         print(txt)
         f.write(txt)
 
 
-update()
+print(gr())
