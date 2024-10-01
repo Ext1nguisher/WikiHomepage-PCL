@@ -169,7 +169,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <ListItem><Paragraph>青蛙卵孵化后会生成2-5只蝌蚪。</Paragraph></ListItem><!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">行为</Paragraph><List><!-- body -->
-<ListItem><Paragraph>蝌蚪可以被装入水桶中携带，对蝌蚪使用水桶可以获得<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA%E6%A1%B6">蝌蚪桶</Underline></local:MyTextButton></Paragraph></ListItem>
+<ListItem><Paragraph>蝌蚪可以被装入水桶中携带，对蝌蚪使用水桶可以获得<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA%E6%A1%B6">蝌蚪桶</local:MyTextButton></Underline></Paragraph></ListItem>
 <ListItem><Paragraph>蝌蚪在水中会漫无目的地游动。蝌蚪在陆地上时会像鱼一样扑腾，并试图寻找附近的水，</Paragraph></ListItem>
 <ListItem><Paragraph>停留在陆地上的蝌蚪大约15秒&#91;仅JE#93;或10秒&#91;仅BE#93;后便开始受到脱水伤害。</Paragraph></ListItem>
 <ListItem><Paragraph>蝌蚪会在20分钟之后成长为青蛙，青蛙的肤色由蝌蚪所处的生物群系决定。</Paragraph></ListItem>
