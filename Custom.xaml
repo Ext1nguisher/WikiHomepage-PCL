@@ -164,7 +164,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <Paragraph Style="{StaticResource H2}">蝌蚪</Paragraph>
 <List>
 <!-- introduction -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="蝌蚪" Margin="0,0,0,-8">https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA</local:MyTextButton></Underline>是一种友好生物，属于<Underline><local:MyTextButton EventType="打开网页" EventData="青蛙" Margin="0,0,0,-8">https://zh.minecraft.wiki/w/%E9%9D%92%E8%9B%99</local:MyTextButton></Underline>的幼年形态。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA" Margin="0,0,0,-8">蝌蚪</local:MyTextButton></Underline>是一种友好生物，属于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9D%92%E8%9B%99" Margin="0,0,0,-8">青蛙</local:MyTextButton></Underline>的幼年形态。</Paragraph></ListItem>
 <!-- end_introduction -->
 
 </List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
