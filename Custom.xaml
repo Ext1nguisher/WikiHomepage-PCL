@@ -169,14 +169,14 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 
 </List><Paragraph Style="{StaticResource H3}">获取</Paragraph><List><!-- intro_2 -->
 <ListItem><Paragraph>木桶会生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>中。</Paragraph></ListItem>
-<ListItem><Paragraph>它也可以使用<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E6%9D%BF" Margin="0,0,0,-8">木板</local:MyTextButton></Underline>和<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E8%B4%A8%E5%8F%B0%E9%98%B6" Margin="0,0,0,-8">木制台阶</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
+<ListItem><Paragraph>它也可以使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E6%9D%BF" Margin="0,0,0,-8">木板</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E8%B4%A8%E5%8F%B0%E9%98%B6" Margin="0,0,0,-8">木制台阶</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph>与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>相同，每个木桶有27格的存储空间。木桶可以由<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8A%95%E6%8E%B7%E5%99%A8" Margin="0,0,0,-8">投掷器</local:MyTextButton></Underline>填充</Paragraph></ListItem>
-<ListItem><Paragraph>也可以由<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>填充和清空。木桶在被破坏时会掉落自身和其中的物品</Paragraph></ListItem>
-<ListItem><Paragraph><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E6%B0%91" Margin="0,0,0,-8">村民</local:MyTextButton></Underline>可以认领木桶并转变职业为<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B8%94%E5%A4%AB" Margin="0,0,0,-8">渔夫</local:MyTextButton></Underline></Paragraph></ListItem>
-<ListItem><Paragraph>木桶放置后，其有桶盖的一面会朝向玩家。对着木桶按下<local:MyTextButton ToolTip="默认为鼠标右键或手柄左扳机。" IsHitTestVisible="False">使用</local:MyTextButton>即可打开木桶的容器GUI。木桶在打开时，其桶盖面会变为打开的纹理。不同于箱子，木桶的使用不会被任何方式阻挡。</Paragraph></ListItem><!-- end_body -->
+<ListItem><Paragraph>与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>相同，每个木桶有27格的存储空间。木桶可以由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8A%95%E6%8E%B7%E5%99%A8" Margin="0,0,0,-8">投掷器</local:MyTextButton></Underline>填充</Paragraph></ListItem>
+<ListItem><Paragraph>也可以由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>填充和清空。木桶在被破坏时会掉落自身和其中的物品</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E6%B0%91" Margin="0,0,0,-8">村民</local:MyTextButton></Underline>可以认领木桶并转变职业为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B8%94%E5%A4%AB" Margin="0,0,0,-8">渔夫</local:MyTextButton></Underline></Paragraph></ListItem>
+<ListItem><Paragraph>木桶放置后，其有桶盖的一面会朝向玩家。对着木桶按下<Underline><local:MyTextButton ToolTip="默认为鼠标右键或手柄左扳机。" IsHitTestVisible="False">使用</local:MyTextButton></Underline>即可打开木桶的容器GUI。木桶在打开时，其桶盖面会变为打开的纹理。不同于箱子，木桶的使用不会被任何方式阻挡。</Paragraph></ListItem><!-- end_body -->
 </List>
 <Paragraph>图为村庄中生成的木桶。</Paragraph>
 </FlowDocument>
