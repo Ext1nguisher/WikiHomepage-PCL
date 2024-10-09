@@ -158,7 +158,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <Image Source="https://zh.minecraft.wiki/images/Barrel_in_village.png?3cbe3&amp;format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="中文 Minecraft Wiki 摘录--本周页面" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="本周页面--木桶" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
 <Paragraph Style="{StaticResource H2}">木桶</Paragraph>
