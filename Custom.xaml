@@ -110,8 +110,8 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
 <sys:String x:Key="WikiIcon">
 M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.73,60.79h1c3.61-20.61,7.47-41,11.34-60.79l18.23-81.58a7.7,7.7,0,0,1,7.52-6h26.58a7.7,7.7,0,0,1,7.51,6l18.48,81.6c3.86,19.57,7.21,40.18,11.07,60.79h1.29c2.32-20.61,4.9-41,7.22-60.79l11.67-81a7.7,7.7,0,0,1,7.62-6.6h27.72a7.7,7.7,0,0,1,7.59,9L364.41,382.2a7.69,7.69,0,0,1-7.58,6.38H311.61a7.7,7.7,0,0,1-7.54-6.14l-16-77.33c-3.09-14.68-5.67-30.14-7.47-44.57h-1c-2.58,14.43-4.9,29.89-7.73,44.57L256.34,382.4a7.7,7.7,0,0,1-7.54,6.18H204.6a7.69,7.69,0,0,1-7.58-6.32L165,205.72A7.71,7.71,0,0,1,172.61,196.65ZM286.87,507.39,159.71,455.25v22.82L97.54,451.18v-23.3l-89-2,9.54-119.29H44.78V291.24L31.45,280.81V247l14.09-4.23L45,227.13,63.33,220V207.1l5.51-2v-16.2l15.65-4.93V167.63l24.06-11.81,1.65-21.95,4.94-1.72-2-1V95.6h13V89.45l27.56-14.79L169,84.43,185.79,76l21.47,15.34,8.1,1v7.91h6.51l60.65-30.56,8,3.49,17-12.08L324,71l.12-2.19,39.15-22,18.06,12.53h26.37l3.79-1.62,36.38,27.4v28.77l16.81,8.15V149l6.08,3V164l10.15,5.51v11.32h9v11.52l1,0c1.54,0,3.44.08,5.91,0l15.13-.13V212.7h9.28v49.71h-5.8v36.1l-16,9h56l6.78,119.85-116.84-1.4Zm-157.16-85.7h27.23l128.51,52.7,152.82-78.54,92.15,1.1-3.36-59.47H456.67V325.89h-5.8v-40l22.37,1.81L485.36,281v-.86h-7.24V268.5h-7V236.33l-11.31,8.61V210.82h-9V187.35l-10.15-5.51V170.59l-11.59-5.79V138.2l-38.25-18.53,26.95-17.27v-2.29l-10.59-8-24.49,10.41V89.37H371.9l-10.35-7.18-8.38,4.7-.6,11.32-22.31,11.61-21.4-12.9L294,107.45l-10.58-4.63L192,148.87V130.24h-6.67V119l-1-.12V121l-28.12,4v.58h-7.1L151.49,150l-5.17-.37.11,3.38-1.27.44,14.7,10.59-45.37,22.26V206l-15.65,4.93V226l-5.51,2v12.57l-17.6,6.81.61,17.43-12,3.61,10.46,8.18v1.59h11.6v24l43.44,34.42h-84l-4.8,60,86.54,1.93v32.93l2.17.94ZM476.3,232.41h5.58v-4.25Z
 </sys:String>
-<sys:String x:Key="datetime">最后更新：2024-10-03</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA</sys:String>
+<sys:String x:Key="datetime">最后更新：2024-10-09</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E6%9C%A8%E6%A1%B6</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -153,31 +153,32 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Tadpole_in_mangrove_swamp_water.png/350px-Tadpole_in_mangrove_swamp_water.png?04b27" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Barrel_in_village.png?3cbe3&amp;format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Tadpole_in_mangrove_swamp_water.png/350px-Tadpole_in_mangrove_swamp_water.png?04b27" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/Barrel_in_village.png?3cbe3&amp;format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="本周页面--蝌蚪" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="中文 Minecraft Wiki 摘录--本周页面" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">蝌蚪</Paragraph>
+<Paragraph Style="{StaticResource H2}">木桶</Paragraph>
 <List>
 <!-- introduction -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA" Margin="0,0,0,-8">蝌蚪</local:MyTextButton></Underline>是一种友好生物，属于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9D%92%E8%9B%99" Margin="0,0,0,-8">青蛙</local:MyTextButton></Underline>的幼年形态。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E6%A1%B6" Margin="0,0,0,-8">木桶</local:MyTextButton></Underline>是可以储存<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%89%A9%E5%93%81" Margin="0,0,0,-8">物品</local:MyTextButton></Underline>的方块</Paragraph></ListItem>
 <!-- end_introduction -->
 
-</List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph>青蛙卵孵化后会生成2-5只蝌蚪。</Paragraph></ListItem><!-- end_intro_2 -->
+</List><Paragraph Style="{StaticResource H3}">获取</Paragraph><List><!-- intro_2 -->
+<ListItem><Paragraph>木桶会生成在<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>和<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>中。</Paragraph></ListItem>
+<ListItem><Paragraph>它也可以使用<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E6%9D%BF" Margin="0,0,0,-8">木板</local:MyTextButton></Underline>和<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%A8%E8%B4%A8%E5%8F%B0%E9%98%B6" Margin="0,0,0,-8">木制台阶</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
+<!-- end_intro_2 -->
 
-</List><Paragraph Style="{StaticResource H3}">行为</Paragraph><List><!-- body -->
-<ListItem><Paragraph>蝌蚪可以被装入水桶中携带，对蝌蚪使用水桶可以获得<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9D%8C%E8%9A%AA%E6%A1%B6" Margin="0,0,0,-8">蝌蚪桶</local:MyTextButton></Underline></Paragraph></ListItem>
-<ListItem><Paragraph>蝌蚪在水中会漫无目的地游动。蝌蚪在陆地上时会像鱼一样扑腾，并试图寻找附近的水，</Paragraph></ListItem>
-<ListItem><Paragraph>停留在陆地上的蝌蚪大约15秒&#91;仅JE&#93;或10秒&#91;仅BE&#93;后便开始受到脱水伤害。</Paragraph></ListItem>
-<ListItem><Paragraph>蝌蚪会在20分钟之后成长为青蛙，青蛙的肤色由蝌蚪所处的生物群系决定。</Paragraph></ListItem>
-<ListItem><Paragraph>蝌蚪会跟随10格内&#91;仅JE&#93;或16格内&#91;仅BE&#93;手持粘液球的玩家</Paragraph></ListItem><!-- end_body -->
+</List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
+<ListItem><Paragraph>与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>相同，每个木桶有27格的存储空间。木桶可以由<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8A%95%E6%8E%B7%E5%99%A8" Margin="0,0,0,-8">投掷器</local:MyTextButton></Underline>填充</Paragraph></ListItem>
+<ListItem><Paragraph>也可以由<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>填充和清空。木桶在被破坏时会掉落自身和其中的物品</Paragraph></ListItem>
+<ListItem><Paragraph><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E6%B0%91" Margin="0,0,0,-8">村民</local:MyTextButton></Underline>可以认领木桶并转变职业为<local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B8%94%E5%A4%AB" Margin="0,0,0,-8">渔夫</local:MyTextButton></Underline></Paragraph></ListItem>
+<ListItem><Paragraph>木桶放置后，其有桶盖的一面会朝向玩家。对着木桶按下<local:MyTextButton ToolTip="默认为鼠标右键或手柄左扳机。" IsHitTestVisible="False">使用</local:MyTextButton>即可打开木桶的容器GUI。木桶在打开时，其桶盖面会变为打开的纹理。不同于箱子，木桶的使用不会被任何方式阻挡。</Paragraph></ListItem><!-- end_body -->
 </List>
-<Paragraph>图为水中的蝌蚪。</Paragraph>
+<Paragraph>图为村庄中生成的木桶。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
