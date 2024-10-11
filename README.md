@@ -1,6 +1,6 @@
 # PCLhomepage
 ***A simple PCL homepage for all!***
-![image](https://github.com/user-attachments/assets/a089117d-1e07-45c2-bc81-29fece2d9eb8)
+![image](image.png)
 
     
 This homepage has the following advantages that make you use it:
