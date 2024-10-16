@@ -300,7 +300,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
             'topic': obj.find('div', class_="weekly-content").text[:2],
             'intro': gr()[0],
             'intro_2': gr()[1],
-            'body': gr()[2:-1],
+            'body': '\n'.join(gr()[2:-1]),
             'alt': gr()[-1],
             'img': gs(),
             'NewsCard': get_news_card(),
