@@ -7,9 +7,11 @@ response = requests.get("https://zh.minecraft.wiki").text
 obj = BeautifulSoup(response, 'html.parser')
 
 
-def while_delete(del_txt, txt):
-    while del_txt in txt:
-        txt.remove(del_txt)
+def while_delete(del_txts, txt):
+    for del_txt in del_txts:
+        while del_txt in txt:
+            txt.replace(del_txt, '')
+    return txt
 
 
 def get_news_card():
@@ -41,7 +43,7 @@ def get_link_txt(txt):
 
 def link_to_xaml(lk):
     xaml = f'''<Underline><local:MyTextButton EventType="打开网页" \
-    EventData="{lk[1]}" Margin="0,0,0,-8">{lk[0]}</local:MyTextButton></Underline>'''
+EventData="{lk[1]}" Margin="0,0,0,-8">{lk[0]}</local:MyTextButton></Underline>'''
     return xaml
 
 
@@ -297,11 +299,11 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
         f.write(content_text % {
             'datetime': f'最后更新: {now.strftime("%Y-%m-%d")}',
             'WikiPage': list(get_link_txt(str(obj.find('div', class_="weekly-content"))).values())[0],
-            'topic': obj.find('div', class_="weekly-content").text[:2],
+            'topic': list(get_link_txt(str(obj.find('div', class_="weekly-content"))).keys())[0],
             'intro': gr()[0],
             'intro_2': gr()[1],
             'body': '\n'.join(gr()[2:-1]),
-            'alt': gr()[-1],
+            'alt': gr()[-1].replace("<ListItem>", '').replace("</ListItem>", ''),
             'img': gs(),
             'NewsCard': get_news_card(),
             'version': get_version()
