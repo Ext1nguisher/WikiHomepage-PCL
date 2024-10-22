@@ -7,10 +7,10 @@ response = requests.get("https://zh.minecraft.wiki").text
 obj = BeautifulSoup(response, 'html.parser')
 
 
-def while_delete(del_txts, txt):
+def while_delete(del_txts, txt, replacement=''):
     for del_txt in del_txts:
         while del_txt in txt:
-            txt.replace(del_txt, '')
+            txt = txt.replace(del_txt, replacement)
     return txt
 
 
@@ -28,6 +28,7 @@ def gr():
     for k, v in links.items():
         result = [i.replace(k, link_to_xaml((k, v))) if k in i else i for i in result]
     result.pop()
+    result[-1] = while_delete((' Margin="0,0,0,-8"',), result[-1])
     return result
 
 
