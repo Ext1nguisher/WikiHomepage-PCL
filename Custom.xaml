@@ -148,7 +148,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
     </Grid>
 </Border>
 </local:MyCard>
-<local:MyCard Title="中文 Minecraft Wiki 摘录--本周页面" CanSwap="True" IsSwaped="false" Style="{StaticResource Card}" >
+<local:MyCard Title="中文 Minecraft Wiki 摘录 - 本周页面" CanSwap="True" IsSwaped="false" Style="{StaticResource Card}" >
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
@@ -157,7 +157,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <Image Source="https://zh.minecraft.wiki/images/thumb/Looms_in_village.png/350px-Looms_in_village.png?6e877" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="本周页面--织布机" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="织布机" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
 <Paragraph Style="{StaticResource H2}">织布机</Paragraph>
@@ -192,7 +192,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-10-22" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-10-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -201,10 +201,8 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
 <local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,35,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.1" Info="增加了索西语与白俄罗斯语"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.1" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新发布候选版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.2-rc2" Info="漏洞修复"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.2-rc2" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.2" Info="正式版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.2" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -215,17 +213,16 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 Wiki 摘录主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241022" ToolTip="当前版本号" 
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241023" ToolTip="当前版本号" 
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-4,0,0,10" Height="56">
     <Image Margin="2" Source="http://creeperisaspy.tttttttttt.top/CardExt1nguisher.png"/>
-    <Image Margin="2" Source="https://image.stapxs.cn/i/2024/05/24/LB.png
-" />
+    <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Left" FontSize="12" Foreground="{DynamicResource ColorBrush4}">主页使用了来自<Underline><local:MyTextButton EventType="打开网页" EventData="https://github.com/Light-Beacon" Foreground="{DynamicResource ColorBrush4}">@最亮的信标</local:MyTextButton></Underline>的模板。</TextBlock>
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-8,0,0,10">
-    <local:MyIconTextButton HorizontalAlignment="Left" Text="GitHub" ToolTip="前往Wiki 摘录主页 GitHub 页面" EventType="打开网页"
-    EventData="https://github.com/Ext1nguisher/PCLhomepage"
+    <local:MyIconTextButton HorizontalAlignment="Left" Text="Gitee" ToolTip="前往Wiki 摘录主页 Gitee 页面" EventType="打开网页"
+    EventData="https://gitee.com/planet_of_daniel/pcl2-homepage-fhg"
     LogoScale="1" Logo="M512 42.666667A464.64 464.64 0 0 0 42.666667 502.186667 460.373333 460.373333 0 0 0 363.52 938.666667c23.466667 4.266667 32-9.813333 32-22.186667v-78.08c-130.56 27.733333-158.293333-61.44-158.293333-61.44a122.026667 122.026667 0 0 0-52.053334-67.413333c-42.666667-28.16 3.413333-27.733333 3.413334-27.733334a98.56 98.56 0 0 1 71.68 47.36 101.12 101.12 0 0 0 136.533333 37.973334 99.413333 99.413333 0 0 1 29.866667-61.44c-104.106667-11.52-213.333333-50.773333-213.333334-226.986667a177.066667 177.066667 0 0 1 47.36-124.16 161.28 161.28 0 0 1 4.693334-121.173333s39.68-12.373333 128 46.933333a455.68 455.68 0 0 1 234.666666 0c89.6-59.306667 128-46.933333 128-46.933333a161.28 161.28 0 0 1 4.693334 121.173333A177.066667 177.066667 0 0 1 810.666667 477.866667c0 176.64-110.08 215.466667-213.333334 226.986666a106.666667 106.666667 0 0 1 32 85.333334v125.866666c0 14.933333 8.533333 26.88 32 22.186667A460.8 460.8 0 0 0 981.333333 502.186667 464.64 464.64 0 0 0 512 42.666667"/>
     <local:MyIconTextButton Text="CC BY-NC-SA 4.0" ToolTip="无特殊声明本主页文字内容使用该授权协议" EventType="打开网页"
     EventData="https://creativecommons.org/licenses/by-nc-sa/4.0/"
