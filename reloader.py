@@ -1,6 +1,10 @@
-import requests
-import re
 import datetime
+import hashlib
+import re
+import time
+import struct
+
+import requests
 from bs4 import BeautifulSoup
 
 response = requests.get("https://zh.minecraft.wiki").text
@@ -55,9 +59,11 @@ def gs():
 
 
 def get_version():
-    vid = datetime.datetime.now().strftime("%y%m%d")
+    dt = datetime.datetime.now().strftime("%y%m%d")
+    hsh = hashlib.md5(struct.pack('<f', time.time())).hexdigest()
+    vid = f"{dt}:{hsh[:7]}"
     with open("Custom.xaml.ini", 'w') as f:
-        f.write(vid)
+        f.write(f"{dt}:{hsh}")
     return vid
 
 
@@ -267,7 +273,7 @@ M172.61,196.65h31a7.69,7.69,0,0,1,7.62,6.65l11.19,80.95c2.58,20.09,5.16,40.18,7.
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 Wiki 摘录主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="%(version)s" ToolTip="当前版本号" 
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="%(version)s" ToolTip="当前版本号(非git)" 
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-4,0,0,10" Height="56">
