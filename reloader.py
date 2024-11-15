@@ -328,4 +328,11 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
         })
 
 
-update()
+print(f'INTRO $1:\n\t{gr()[0]}\n')
+print(f'INTRO $2:\n\t{gr()[1]}\n')
+BODYTXT = '\n'.join(gr()[2:-1])
+print(f'BODY:    \n{BODYTXT}\n')
+ALTTXT = gr()[-1].replace("<ListItem>", '').replace("</ListItem>", '')
+print(f'ALT:\n\t{ALTTXT}\n')
+print(f'$NEWSCARD:     \n{get_news_card()}\n')
+print(f'$VID:     {get_version()}')
