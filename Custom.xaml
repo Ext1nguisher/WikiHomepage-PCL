@@ -217,8 +217,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.3" Info="正式版"
 	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 24w46a" Info="快照版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=24w46a" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 24w44a" Info="快照版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=24w44a" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -268,8 +268,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">当古美索不达米亚国王纳波尼丢斯在那时发掘并分析公元前2200年代，阿卡迪恩帝国的遗址废墟时，他不仅发现了代表太阳、月亮的神明和一个战神的庙宇，还着手了重建工作，使它们重现昔日的辉煌。</Paragraph>
 <Paragraph Margin="0,0">有趣的是，我们得知这些，完全是因为我们的考古学家考察了他的考古成果! </Paragraph>
 <Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">所以当你下次在主世界发掘古迹废墟时，别忘了好好思考一下一万年后的玩家会如何发现你的作品并以此来审视你。</Paragraph>
-<Paragraph Margin="0,0">你也许会想给他们留个便条——一个未来的时光胶囊。挖出、发掘它，难道不是件激动人心的事吗? </Paragraph>
+<Paragraph Margin="0,0">所以当你下次在主世界发掘古迹废墟时，别忘了好好思考一下一万年后的玩家会如何发现你的作品并以此来审视你。你也许会想给他们留个便条——一个未来的时光胶囊。挖出、发掘它，难道不是件激动人心的事吗? </Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -282,7 +281,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-15" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-14" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页"
     EventData="https://www.minecraft.net/en-us/article/trail-ruins" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -294,11 +293,18 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241115:08621ac" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241116:d4bb7b5" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
-    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-4,0,0,10" Height="56">
-    <Image Margin="2" Source="http://creeperisaspy.tttttttttt.top/CardExt1nguisher.png"/>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
+    <TextBlock HorizontalAlignment="Left" Grid.Column="0" FontSize="13" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}">
+        <Run>主页制作: 仿生猫梦见苦力怕 / CreeperIsASpy</Run>
+        <LineBreak/>
+        <Run>更新时间: 周一下午到周二下午(本人初中生学业紧张理解一下)</Run>
+        <LineBreak/>
+        <Run>内容取自</Run><Hyperlink NavigateUri="https://zh.minecraft.wiki">中文 Minecraft Wiki</Hyperlink>
+        <Run>中"本周页面"板块以及</Run><Hyperlink NavigateUri="https://minecraft.net">MC 官网。</Hyperlink>
+    </TextBlock>
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-8,0,0,10">
     <local:MyIconTextButton HorizontalAlignment="Left" Text="Gitee" ToolTip="前往杂志主页 Gitee 页面" EventType="打开网页"
