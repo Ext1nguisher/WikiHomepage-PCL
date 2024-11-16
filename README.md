@@ -11,7 +11,7 @@
 
 ## Usage:
 
-1. Use presets
+1. Use presets  
    First, open your Plain Craft Launcher(Please use the latest version).
    Secondly, turn to `Settings` page.
    Then, turn to the `Personalization`tab on the left side.
@@ -34,10 +34,10 @@
 
 ## License
 
-[CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for most of the Homepage.
+[CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for most of the Homepage.  
 
-[CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) for Minecraft Wiki Excerpt Contents.
+[CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) for Minecraft Wiki Excerpt Contents.  
 
-[MIT License](https://mit-license.org/) for News card.
+[MIT License](https://mit-license.org/) for News card.  
 
 ***Thank you for choosing us!***
