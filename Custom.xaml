@@ -126,7 +126,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 凌云 @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激! \n
 排列没啥顺序，个个我都非常非常非常谢谢你们!
 </sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -168,32 +168,32 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Diorite_Forest.png/350px-Diorite_Forest.png?c8d14" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Igneous_Stone_Variants.png/300px-Igneous_Stone_Variants.png?f396f" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Diorite_Forest.png/350px-Diorite_Forest.png?c8d14" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/Igneous_Stone_Variants.png/300px-Igneous_Stone_Variants.png?f396f" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="闪长岩" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="花岗岩" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">闪长岩</Paragraph>
+<Paragraph Style="{StaticResource H2}">花岗岩</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>是一种常见的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%B2%A9%E7%9F%B3" Margin="0,0,0,-8">岩石</local:MyTextButton></Underline>方块。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>是一种常见的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%B2%A9%E7%9F%B3" Margin="0,0,0,-8">岩石</local:MyTextButton></Underline>方块。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">获取</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>会以<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9B%A2%E7%B0%87" Margin="0,0,0,-8">团簇</local:MyTextButton></Underline>的形式在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>Y坐标0-60及64-128的范围中生成，也可以使用2个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9C%86%E7%9F%B3" Margin="0,0,0,-8">圆石</local:MyTextButton></Underline>和2个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E7%95%8C%E7%9F%B3%E8%8B%B1" Margin="0,0,0,-8">下界石英</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>会以<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9B%A2%E7%B0%87" Margin="0,0,0,-8">团簇</local:MyTextButton></Underline>的形式在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>Y坐标0-60及64-128的范围中生成，也会在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>Y=0至50的区域与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%9F%BF%E7%9F%B3" Margin="0,0,0,-8">铜矿石</local:MyTextButton></Underline>相伴生成，形成铜矿脉。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph>磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>的磨制变种，可由4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>合成，也可在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%87%E7%9F%B3%E6%9C%BA" Margin="0,0,0,-8">切石机</local:MyTextButton></Underline>中用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>制成。</Paragraph></ListItem>
-<ListItem><Paragraph>此外，磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>还会生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%B7%E5%BA%95%E5%BA%9F%E5%A2%9F" Margin="0,0,0,-8">海底废墟</local:MyTextButton></Underline>中。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>和磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>需要木镐或品质更好的镐来挖掘，否则挖掘时间将延长且不会掉落。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>和磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>拥有与石头相同的爆炸抗性，可在建筑时作为石头的代替品。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>还可以使用1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E7%95%8C%E7%9F%B3%E8%8B%B1" Margin="0,0,0,-8">下界石英</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
+<ListItem><Paragraph>磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>的磨制变种，可由4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>合成，也可在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%87%E7%9F%B3%E6%9C%BA" Margin="0,0,0,-8">切石机</local:MyTextButton></Underline>中用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>制成。</Paragraph></ListItem>
+<ListItem><Paragraph>此外，磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>会生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%B7%E5%BA%95%E5%BA%9F%E5%A2%9F" Margin="0,0,0,-8">海底废墟</local:MyTextButton></Underline>和沙漠<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>的盔甲匠小屋中。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>和磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>拥有与石头相同的爆炸抗性，可在建筑时作为石头的代替品。</Paragraph></ListItem>
 <!-- end_body -->
 </List>
-<Paragraph>图为森林中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9">闪长岩</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9">花岗岩</local:MyTextButton></Underline>、安山岩、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9">闪长岩</local:MyTextButton></Underline>和它们相应的磨制变种。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -206,7 +206,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-18" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -293,7 +293,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241116:98fa89e" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241118:39e26be" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">

@@ -403,6 +403,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
             'version': get_version()
         })
 
+
 def print_out():
     print(f'INTRO $1:\n\t{gr()[0]}\n')
     print(f'INTRO $2:\n\t{gr()[1]}\n')
