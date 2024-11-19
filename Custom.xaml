@@ -243,7 +243,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">这些文化古迹全被深埋在林木茂密的群系地底, 在被Mojang Studios考古团队称作&quot;古迹废墟&quot;的结构之中。</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-ingame.jpg"/>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-ingame.png"/>
 <TextBlock Text="游戏中的古迹废墟" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
