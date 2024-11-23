@@ -415,4 +415,4 @@ def print_out():
     print(f'$VID:     {get_version()}')
 
 
-update()
+print_out()
