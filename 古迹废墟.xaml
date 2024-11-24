@@ -1,0 +1,64 @@
+<local:MyCard Title="Minecraft官方博文 - 识海漫谈" CanSwap="True" IsSwaped="false" Style="{StaticResource Card}" >
+<StackPanel Style="{StaticResource ContentStack}">
+<Border Style="{StaticResource HeadImageBorder}">
+<Border.Background>
+<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Stretch="UniformToFill" />
+</Border.Background>
+<Image Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Opacity="0" Stretch="Fill"/>
+</Border>
+<Border Style="{StaticResource TitleBorder}">
+<TextBlock Style="{StaticResource TitleBlock}" Text="古迹废墟" />
+</Border><FlowDocumentScrollViewer >
+<FlowDocument>
+<Paragraph Style="{StaticResource H2}">古迹废墟</Paragraph>
+<Paragraph Style="{StaticResource H5}">瓦砾中讲述了什么样的故事?</Paragraph>
+<Paragraph Margin="0,0">游戏中主世界的存在时间显然比你能够想象到的要长得多，这并不是空穴来风，你至少得相信证据！</Paragraph>
+<Paragraph Margin="0,0">巨型生物的化石被证实属于久已灭绝的物种, 遍布四处的煤矿脉表明远古丛林曾给地表披上绿装--可这还不是全部!</Paragraph>
+<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0">无畏的探险家们最近又开始发掘失落古村民文化存在的证据——与现存的村民文化相似，却又截然不同。</Paragraph>
+<Paragraph Margin="0,0">这些文化古迹全被深埋在林木茂密的群系地底, 在被Mojang Studios考古团队称作&quot;古迹废墟&quot;的结构之中。</Paragraph>
+<BlockUIContainer>
+<StackPanel>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-ingame.png"/>
+<TextBlock Text="游戏中的古迹废墟" Style="{StaticResource imgTitle}" />
+</StackPanel>
+</BlockUIContainer>
+<Paragraph Margin="0,0">古迹废墟很罕见且不易找到, 通常在你挖矿或跑图时才被偶然发现。</Paragraph>
+<Paragraph Margin="0,0">你不太会见到它们出现在地表——它们更多在地底生成，也更容易在地底被发现。</Paragraph>
+<Paragraph Margin="0,0">稍稍挖掘，你就能出土一个由几间棚屋和一座塔楼组成的小型聚居地，其大多由泥土和陶瓦建造而成。</Paragraph>
+<Paragraph Margin="0,0">而其结构的中央是一条由圆石和红砖块组成的大道——正如其名，&quot;迹&quot;, 小径。</Paragraph>
+<Paragraph Margin="0,0">所有这些都被掩埋在了泥土、砂土、沙砾、可疑的沙砾(你甚至能通过刷扫它们来得到更多该文明存在的证据!)的混合物之中。</Paragraph>
+<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0">这样做是值得的，因为除了科学发现，还有优良的、激动人心的战利品等待发掘。</Paragraph>
+<Paragraph Margin="0,0">包括绿宝石、金粒、蜡烛、各色的染料以及各式各样的锻造模板和陶片。</Paragraph>
+<Paragraph Margin="0,0">如果你足够幸运，你甚至有可能发现一张古老的、扭曲变形的，音乐唱片! </Paragraph>
+<BlockUIContainer>
+<StackPanel>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-realworld.png"/>
+<TextBlock Text="现实中一个发掘中的古迹废墟 —— 图片版权协议: Billwhittaker // CC BY-SA 3.0" Style="{StaticResource imgTitle}" />
+</StackPanel>
+</BlockUIContainer>
+<Paragraph Margin="0,0">自从三百三十万年前的东非石器时代, 有人类活动记录开始, 直到此时此刻, 在我们所生活的地球上都遍布着古遗迹。</Paragraph>
+<Paragraph Margin="0,0">考古学家们发掘它们，藉此来更好地理解历史上发生的事以及那时人们的生活方式，并详细地记载下来。</Paragraph>
+<Paragraph Margin="0,0">考古并不是近代才出现的词汇——这种活动自公元前550年代起就已存在。</Paragraph>
+<Paragraph Margin="0,0">当古美索不达米亚国王纳波尼丢斯在那时发掘并分析公元前2200年代，阿卡迪恩帝国的遗址废墟时，他不仅发现了代表太阳、月亮的神明和一个战神的庙宇，还着手了重建工作，使它们重现昔日的辉煌。</Paragraph>
+<Paragraph Margin="0,0">有趣的是，我们得知这些，完全是因为我们的考古学家考察了他的考古成果! </Paragraph>
+<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0">所以当你下次在主世界发掘古迹废墟时，别忘了好好思考一下一万年后的玩家会如何发现你的作品并以此来审视你。你也许会想给他们留个便条——一个未来的时光胶囊。挖出、发掘它，难道不是件激动人心的事吗? </Paragraph>
+</FlowDocument>
+</FlowDocumentScrollViewer>
+<Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
+<Grid.ColumnDefinitions >
+<ColumnDefinition Width="45"/>
+<ColumnDefinition />
+</Grid.ColumnDefinitions>
+<Path Grid.Column="0" Margin="8,0" Height="28" Fill="{DynamicResource ColorBrush4}"
+                    Stretch="Uniform"
+                    Data="M640 416h256c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64V640h128c53.312 0 96-42.976 96-96V416zM64 128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H128c-35.36 0-64-28.48-64-64V128z m128 276.256h46.72v-24.768h67.392V497.76h49.504V379.488h68.768v20.64h50.88V243.36H355.616v-34.368c0-10.08 1.376-18.784 4.16-26.112a10.56 10.56 0 0 0 1.344-4.16c0-0.896-3.2-1.792-9.6-2.72h-46.816v67.36H192v160.896z m46.72-122.368h67.392v60.48h-67.36V281.92z m185.664 60.48h-68.768V281.92h68.768v60.48z m203.84 488l19.264-53.632h100.384l19.264 53.632h54.976L732.736 576h-64.64L576 830.4h52.256z m33.024-96.256l37.12-108.608h1.376l34.368 108.608h-72.864zM896 320h-64a128 128 0 0 0-128-128v-64a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"/>
+<TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
+</Grid>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-14" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页"
+    EventData="https://www.minecraft.net/en-us/article/trail-ruins" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+</StackPanel>
+</local:MyCard>

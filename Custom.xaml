@@ -226,9 +226,9 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Stretch="UniformToFill" />
+<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/mineshaft-header.jpg" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Opacity="0" Stretch="Fill"/>
+<Image Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/mineshaft-header.jpg" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
 <TextBlock Style="{StaticResource TitleBlock}" Text="废弃矿井" />
@@ -244,7 +244,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">它清楚地证明了先人尝试榨干主世界资源的企图，这可能就是钻石难以找到的原因吧！</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-ingame.png"/>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/mineshaft-ingame.png"/>
 <TextBlock Text="游戏中的废弃矿井" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
@@ -260,8 +260,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">这个体型更小的蜘蛛种群不仅更难以击中，还在攻击时造成负面的状态效果。千万要远离。</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-realworld.png"/>
-<TextBlock Text="现实中一个发掘中的古迹废墟 —— 图片版权协议: Billwhittaker // CC BY-SA 3.0" Style="{StaticResource imgTitle}" />
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/mineshaft-realworld.png"/>
+<TextBlock Text="现实中的矿巷 —— 图片版权协议: EwkaC // CC BY-SA 4.0" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
 <Paragraph Margin="0,0">在真实世界中，人类已经为了获取资源而建造了数千年的矿井。</Paragraph>
@@ -291,6 +291,21 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页"
     EventData="https://www.minecraft.net/en-us/article/trail-ruins" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
+    <StackPanel Margin="25,40,23,15">
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="100"/>
+      </Grid.ColumnDefinitions>
+      <local:MyComboBox x:Name="jumpbox" Height="30" SelectedIndex="0">
+        <local:MyComboBoxItem Content="古迹废墟"/>
+        <local:MyComboBoxItem Content="输入..."/>
+      </local:MyComboBox>
+        <local:MyButton HorizontalAlignment="Center" Width="80"
+            Grid.Column="1" Text="打开→" EventType="打开帮助"
+            EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/h{0}.xaml"/>
+    </Grid>
+    </StackPanel>
 </local:MyCard>
 <local:MyCard Margin="0,10,0,14">
 <Border BorderBrush="{DynamicResource ColorBrush2}" Margin="-0.6" CornerRadius="5" BorderThickness="0,0,0,10">
