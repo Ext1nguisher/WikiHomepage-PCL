@@ -168,32 +168,33 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Igneous_Stone_Variants.png/300px-Igneous_Stone_Variants.png?f396f" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Copper_Bulb_in_Trial_Chamber.jpeg?bb48c&amp;format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Igneous_Stone_Variants.png/300px-Igneous_Stone_Variants.png?f396f" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/Copper_Bulb_in_Trial_Chamber.jpeg?bb48c&amp;format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="花岗岩" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="铜灯" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">花岗岩</Paragraph>
+<Paragraph Style="{StaticResource H2}">铜灯</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>是一种常见的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%B2%A9%E7%9F%B3" Margin="0,0,0,-8">岩石</local:MyTextButton></Underline>方块。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>是一种会随着时间缓慢生锈的照明<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>，接收到红石脉冲信号时会切换开关状态。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">获取</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>会以<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9B%A2%E7%B0%87" Margin="0,0,0,-8">团簇</local:MyTextButton></Underline>的形式在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>Y坐标0-60及64-128的范围中生成，也会在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>Y=0至50的区域与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%9F%BF%E7%9F%B3" Margin="0,0,0,-8">铜矿石</local:MyTextButton></Underline>相伴生成，形成铜矿脉。</Paragraph></ListItem>
+<ListItem><Paragraph>涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>、涂蜡的斑驳<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>、涂蜡的锈蚀<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>和涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>可以生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>中。</Paragraph></ListItem>
+<ListItem><Paragraph>使用3个相同的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>、1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%83%88%E7%84%B0%E6%A3%92" Margin="0,0,0,-8">烈焰棒</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%BA%A2%E7%9F%B3%E7%B2%89" Margin="0,0,0,-8">红石粉</local:MyTextButton></Underline>可以合成4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>还可以使用1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9" Margin="0,0,0,-8">闪长岩</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E7%95%8C%E7%9F%B3%E8%8B%B1" Margin="0,0,0,-8">下界石英</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
-<ListItem><Paragraph>磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>的磨制变种，可由4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>合成，也可在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%87%E7%9F%B3%E6%9C%BA" Margin="0,0,0,-8">切石机</local:MyTextButton></Underline>中用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>制成。</Paragraph></ListItem>
-<ListItem><Paragraph>此外，磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>会生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%B7%E5%BA%95%E5%BA%9F%E5%A2%9F" Margin="0,0,0,-8">海底废墟</local:MyTextButton></Underline>和沙漠<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>的盔甲匠小屋中。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>和磨制<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9" Margin="0,0,0,-8">花岗岩</local:MyTextButton></Underline>拥有与石头相同的爆炸抗性，可在建筑时作为石头的代替品。</Paragraph></ListItem>
+<ListItem><Paragraph>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%84%BE" Margin="0,0,0,-8">蜜脾</local:MyTextButton></Underline>可以合成对应的涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>接收到红石脉冲后，会切换点亮和熄灭状态。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>被激活时，其纹理中心会出现一个红点，无论<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>是否点亮。</Paragraph></ListItem>
+<ListItem><Paragraph>点亮的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>会发出其<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度对应亮度等级的光，亮度等级会随<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度增加而衰减。</Paragraph></ListItem>
 <!-- end_body -->
 </List>
-<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9">花岗岩</local:MyTextButton></Underline>、安山岩、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%97%AA%E9%95%BF%E5%B2%A9">闪长岩</local:MyTextButton></Underline>和它们相应的磨制变种。</Paragraph>
+<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4">试炼密室</local:MyTextButton></Underline>中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF">铜灯</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -211,17 +212,6 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
 </local:MyCard>
-<!-- NewsCard -->
-<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
-<StackPanel Margin="8,35,8,15">
-<local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.3" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 24w46a" Info="快照版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=24w46a" Type="Clickable" />
-</StackPanel>
-</local:MyCard>
-<!-- end_NewsCard -->
 <local:MyCard Title="Minecraft官方博文 - 识海漫谈" CanSwap="True" IsSwaped="false" Style="{StaticResource Card}" >
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
@@ -248,7 +238,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <TextBlock Text="游戏中的废弃矿井" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0">第一个废弃矿井的出现始于2011年6月的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%92%E9%99%A9%E6%9B%B4%E6%96%B0" Margin="0,0,0,-8">冒险更新</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph Margin="0,0">第一个废弃矿井的出现始于2011年6月的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%92%E9%99%A9%E6%9B%B4%E6%96%B0" Margin="0">冒险更新</local:MyTextButton></Underline>。</Paragraph>
 <Paragraph Margin="0,0">它易于辨认——主体为由3x3隧道构成的密集网络，布有橡木和铁轨，且穿插着大量的蜘蛛网。其在与峡谷相交时最容易被发现。</Paragraph>
 <Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
 <Paragraph Margin="0,0">矿物资源和战利品使它们成为玩家们探索的好去处：</Paragraph>
@@ -288,10 +278,10 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
 <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
-<local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页"
+<local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页" Margin="0,0,0,40"
     EventData="https://www.minecraft.net/en-us/article/trail-ruins" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
-    <StackPanel Margin="25,40,23,15">
+<StackPanel Margin="25,0,23,20" VerticalAlignment="bottom">
     <Grid>
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="1*"/>
@@ -303,10 +293,21 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
       </local:MyComboBox>
         <local:MyButton HorizontalAlignment="Center" Width="80"
             Grid.Column="1" Text="打开→" EventType="打开帮助"
-            EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/h{0}.xaml"/>
+            EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/h{0}.json}"/>
     </Grid>
-    </StackPanel>
+</StackPanel>
 </local:MyCard>
+<!-- NewsCard -->
+<local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
+<StackPanel Margin="8,35,8,15">
+<local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.3" Info="正式版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新预发布版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新预发布版 - 1.21.4-pre2" Info="预发布版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4-pre2" Type="Clickable" />
+</StackPanel>
+</local:MyCard>
+<!-- end_NewsCard -->
 <local:MyCard Margin="0,10,0,14">
 <Border BorderBrush="{DynamicResource ColorBrush2}" Margin="-0.6" CornerRadius="5" BorderThickness="0,0,0,10">
 <StackPanel>
@@ -314,7 +315,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241119:25b072e" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241124:b4b5a25" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
@@ -338,7 +339,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     </StackPanel>
     <StackPanel HorizontalAlignment="Right" >
     <local:MyIconTextButton HorizontalAlignment="Left" Text="反馈" ToolTip="反馈主页问题" EventType="打开网页"
-    EventData="https://github.com/Ext1nguisher/PCLhomepage/issues/new"
+    EventData="https://gitee.com/planet_of_daniel/pcl2-homepage-fhg/issues/new"
     LogoScale="1" Logo="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0z M1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0z"/>
     <local:MyIconTextButton HorizontalAlignment="Left" Text="刷新" ToolTip="刷新主页" EventType="刷新主页"
     LogoScale="0.9" Logo="M960 416V192l-73.056 73.056a447.712 447.712 0 0 0-373.6-201.088C265.92 63.968 65.312 264.544 65.312 512S265.92 960.032 513.344 960.032a448.064 448.064 0 0 0 415.232-279.488 38.368 38.368 0 1 0-71.136-28.896 371.36 371.36 0 0 1-344.096 231.584C308.32 883.232 142.112 717.024 142.112 512S308.32 140.768 513.344 140.768c132.448 0 251.936 70.08 318.016 179.84L736 416h224z"/>
