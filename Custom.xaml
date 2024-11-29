@@ -289,7 +289,6 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
       </Grid.ColumnDefinitions>
       <local:MyComboBox x:Name="jumpbox" Height="30" SelectedIndex="0">
         <local:MyComboBoxItem Content="古迹废墟"/>
-        <local:MyComboBoxItem Content="输入..."/>
       </local:MyComboBox>
         <local:MyButton HorizontalAlignment="Center" Width="80"
             Grid.Column="1" Text="打开→" EventType="打开帮助"
@@ -302,9 +301,9 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Margin="8,35,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.3" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新预发布版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新预发布版 - 1.21.4-pre2" Info="预发布版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4-pre2" Type="Clickable" />
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新发布候选版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.4-rc1" Info="发布候选版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4-rc1" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -315,7 +314,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241124:b4b5a25" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241129:c2e04b0" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
