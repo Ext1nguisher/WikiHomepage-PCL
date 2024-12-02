@@ -168,33 +168,34 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Copper_Bulb_in_Trial_Chamber.jpeg?bb48c&amp;format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Bedrock_1.18.30.28_PatchNotes.png?b8653&amp;format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/Copper_Bulb_in_Trial_Chamber.jpeg?bb48c&amp;format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/Bedrock_1.18.30.28_PatchNotes.png?b8653&amp;format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="铜灯" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="运输船" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">铜灯</Paragraph>
+<Paragraph Style="{StaticResource H2}">运输船</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>是一种会随着时间缓慢生锈的照明<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>，接收到红石脉冲信号时会切换开关状态。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>是一种能在水体上运输实体和物品的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%88%B9" Margin="0,0,0,-8">船</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">获取</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph>涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>、涂蜡的斑驳<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>、涂蜡的锈蚀<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>和涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>可以生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>中。</Paragraph></ListItem>
-<ListItem><Paragraph>使用3个相同的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E5%9D%97" Margin="0,0,0,-8">铜块</local:MyTextButton></Underline>、1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%83%88%E7%84%B0%E6%A3%92" Margin="0,0,0,-8">烈焰棒</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%BA%A2%E7%9F%B3%E7%B2%89" Margin="0,0,0,-8">红石粉</local:MyTextButton></Underline>可以合成4个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>使用对应的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%88%B9" Margin="0,0,0,-8">船</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>可以合成对应的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>运输竹筏是有着不同的外观的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>变种，可以使用竹筏和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%84%BE" Margin="0,0,0,-8">蜜脾</local:MyTextButton></Underline>可以合成对应的涂蜡的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>接收到红石脉冲后，会切换点亮和熄灭状态。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>被激活时，其纹理中心会出现一个红点，无论<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>是否点亮。</Paragraph></ListItem>
-<ListItem><Paragraph>点亮的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF" Margin="0,0,0,-8">铜灯</local:MyTextButton></Underline>会发出其<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度对应亮度等级的光，亮度等级会随<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%A7%E5%8C%96" Margin="0,0,0,-8">氧化</local:MyTextButton></Underline>程度增加而衰减。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%88%B9" Margin="0,0,0,-8">船</local:MyTextButton></Underline>拥有一些相同的行为，但<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>只能有一个乘客。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>有一个物品栏，其界面与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>界面类似。</Paragraph></ListItem>
+<ListItem><Paragraph>如果玩家乘坐在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>中，玩家可以通过打开物品栏来打开<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>的物品栏；如果玩家未乘坐在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>中，则玩家可以对<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>使用（若<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>中没有实体，则还需处于潜行状态）打开<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>的物品栏。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>可以与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8A%95%E6%8E%B7%E5%99%A8" Margin="0,0,0,-8">投掷器</local:MyTextButton></Underline>等方块交互。</Paragraph></ListItem>
+<ListItem><Paragraph>当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%AE%B1%E5%AD%90" Margin="0,0,0,-8">箱子</local:MyTextButton></Underline>处于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>的上方，下方或者旁边，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9" Margin="0,0,0,-8">运输船</local:MyTextButton></Underline>即可与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%BC%8F%E6%96%97" Margin="0,0,0,-8">漏斗</local:MyTextButton></Underline>交互。</Paragraph></ListItem>
 <!-- end_body -->
 </List>
-<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4">试炼密室</local:MyTextButton></Underline>中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%9C%E7%81%AF">铜灯</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为放置在深暗之域中的橡木<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%90%E8%BE%93%E8%88%B9">运输船</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -207,7 +208,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-18" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-2" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -302,8 +303,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.3" Info="正式版"
 	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.3" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新发布候选版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.4-rc1" Info="发布候选版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4-rc1" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/GrassPath.png" Title="最新发布候选版 - 1.21.4-rc3" Info="发布候选版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4-rc3" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -314,7 +315,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241129:c2e04b0" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241202:03d6ad4" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
