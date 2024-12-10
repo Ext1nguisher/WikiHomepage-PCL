@@ -169,9 +169,9 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Stretch="UniformToFill" />
+<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/trailruins-header2.png" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-header2.png" Opacity="0" Stretch="Fill"/>
+<Image Source="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/trailruins-header2.png" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
 <TextBlock Style="{StaticResource TitleBlock}" Text="古迹废墟" />
@@ -186,7 +186,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0">这些文化古迹全被深埋在林木茂密的群系地底, 在被Mojang Studios考古团队称作&quot;古迹废墟&quot;的结构之中。</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-ingame.png"/>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/trailruins-ingame.png"/>
 <TextBlock Text="游戏中的古迹废墟" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
@@ -201,7 +201,7 @@ M213.333333 128a85.333333 85.333333 0 0 0-85.333333 85.333333v597.333334a85.3333
 <Paragraph Margin="0,0">如果你足够幸运，你甚至有可能发现一张古老的、扭曲变形的，音乐唱片! </Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26994/d/Homepages/Ext1nguisher/trailruins-realworld.png"/>
+<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/trailruins-realworld.png"/>
 <TextBlock Text="现实中一个发掘中的古迹废墟 —— 图片版权协议: Billwhittaker // CC BY-SA 3.0" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
