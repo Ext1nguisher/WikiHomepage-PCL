@@ -216,9 +216,9 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/mineshaft-header.jpg" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://www.helloimg.com/i/2024/12/15/675ebe72302be.jpg" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/mineshaft-header.jpg" Opacity="0" Stretch="Fill"/>
+<Image Source="https://www.helloimg.com/i/2024/12/15/675ebe72302be.jpg" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
 <TextBlock Style="{StaticResource TitleBlock}" Text="废弃矿井" />
@@ -234,7 +234,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">它清楚地证明了先人尝试榨干主世界资源的企图，这可能就是钻石难以找到的原因吧！</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:26995/d/Homepages/Ext1nguisher/mineshaft-ingame.png"/>
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6f7b24e.png"/>
 <TextBlock Text="游戏中的废弃矿井" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
@@ -250,7 +250,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <Paragraph Margin="0,0">这个体型更小的蜘蛛种群不仅更难以击中，还在攻击时造成负面的状态效果。千万要远离。</Paragraph>
 <BlockUIContainer>
 <StackPanel>
-<Image Style="{StaticResource InnerImage}" Source="http://pclhomeplazaoss.lingyunawa.top:269955/d/Homepages/Ext1nguisher/mineshaft-realworld.png"/>
+<Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6faa984.png"/>
 <TextBlock Text="现实中的矿巷 —— 图片版权协议: EwkaC // CC BY-SA 4.0" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
