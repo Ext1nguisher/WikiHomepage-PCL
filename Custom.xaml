@@ -168,33 +168,34 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/EndRod2.png?8598b&amp;format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Cherry-article1.jpg?4fc0c&amp;format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/EndRod2.png?8598b&amp;format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/Cherry-article1.jpg?4fc0c&amp;format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="末地烛" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="粉红色花簇" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">末地烛</Paragraph>
+<Paragraph Style="{StaticResource H2}">粉红色花簇</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>是一种装饰性光源，会产生白色粒子。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>是一种生成于樱花树林生物群系的装饰性方块。</Paragraph></ListItem>
 <!-- end_intro -->
 
-</List><Paragraph Style="{StaticResource H3}">生成 &amp; 合成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>会自然生成于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E5%9F%8E" Margin="0,0,0,-8">末地城</local:MyTextButton></Underline>中。</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>会在樱花树林生物群系中自然生成。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 
 </List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>会发出亮度等级为14的光。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>可以放置在任何方块的表面，且不会因支撑它的方块被破坏而掉落。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%8B%E8%90%BD%E7%9A%84%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">下落的方块</local:MyTextButton></Underline>掉落在竖直的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>上不会被破坏，但掉落到<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%B4" Margin="0,0,0,-8">水</local:MyTextButton></Underline>平朝向的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>上会被破坏。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>会被流动的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%B4" Margin="0,0,0,-8">水</local:MyTextButton></Underline>[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>]和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%86%94%E5%B2%A9" Margin="0,0,0,-8">熔岩</local:MyTextButton></Underline>破坏。</Paragraph></ListItem>
-<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88" Margin="0,0,0,-8">基岩版</local:MyTextButton></Underline>中，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B" Margin="0,0,0,-8">末地烛</local:MyTextButton></Underline>可以含<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B0%B4" Margin="0,0,0,-8">水</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>中，在樱花树林中对着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%89%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">草方块</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>，也有小概率生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>多个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>可以放置在同一格内，这与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%B7%E6%B3%A1%E8%8F%9C" Margin="0,0,0,-8">海泡菜</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%A1%E7%83%9B" Margin="0,0,0,-8">蜡烛</local:MyTextButton></Underline>类似。</Paragraph></ListItem>
+<ListItem><Paragraph>最多可以在一个方块空间内放置4簇。</Paragraph></ListItem>
+<ListItem><Paragraph>对着不满4簇花的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>会增加1簇花；对着含有4簇花的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>会掉落1个新的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>可用于吸引、繁殖<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>以及加速幼年<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>的成长。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>也会采集它的花粉。</Paragraph></ListItem>
 <!-- end_body -->
 </List>
-<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E5%9F%8E">末地城</local:MyTextButton></Underline>中自然生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%83%9B">末地烛</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为俯瞰视角下樱花树林中的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87">粉红色花簇</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -207,7 +208,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-9" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -303,7 +304,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
 	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" />
 </StackPanel>
-</local:MyCard><!-- end_NewsCard -->
+</local:MyCard>
+<!-- end_NewsCard -->
 <local:MyCard Margin="0,10,0,14">
 <Border BorderBrush="{DynamicResource ColorBrush2}" Margin="-0.6" CornerRadius="5" BorderThickness="0,0,0,10">
 <StackPanel>
@@ -311,7 +313,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241209:5b986a9" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241216:2b4c0ff" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
