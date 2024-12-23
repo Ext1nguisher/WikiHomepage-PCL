@@ -126,7 +126,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 凌云 @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激! \n
 排列没啥顺序，个个我都非常非常非常谢谢你们!
 </sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E8%8A%B1%E5%B2%97%E5%B2%A9</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -168,34 +168,35 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Cherry-article1.jpg?4fc0c&amp;format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/Iron_bars_next_to_lava_in_village.png?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/Cherry-article1.jpg?4fc0c&amp;format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/Iron_bars_next_to_lava_in_village.png?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="粉红色花簇" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="铁栏杆" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">粉红色花簇</Paragraph>
+<Paragraph Style="{StaticResource H2}">铁栏杆</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>是一种生成于樱花树林生物群系的装饰性方块。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>是一种与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%BB%E7%92%83%E6%9D%BF" Margin="0,0,0,-8">玻璃板</local:MyTextButton></Underline>性质类似的装饰性<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
-</List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>会在樱花树林生物群系中自然生成。</Paragraph></ListItem>
+</List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
+<ListItem><Paragraph>在合成方格中将6个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E9%94%AD" Margin="0,0,0,-8">铁锭</local:MyTextButton></Underline>排成3×2的长方形即可合成16个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%B8%BB%E4%B8%96%E7%95%8C" Margin="0,0,0,-8">主世界</local:MyTextButton></Underline>，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>会自然生成于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%A6%81%E5%A1%9E" Margin="0,0,0,-8">要塞</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9E%97%E5%9C%B0%E5%BA%9C%E9%82%B8" Margin="0,0,0,-8">林地府邸</local:MyTextButton></Underline>、除<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%92%88%E5%8F%B6%E6%9E%97" Margin="0,0,0,-8">针叶林</local:MyTextButton></Underline>类型外的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84" Margin="0,0,0,-8">村庄</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%9B%AA%E5%B1%8B" Margin="0,0,0,-8">雪屋</local:MyTextButton></Underline>的地下室、部分<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BA%9F%E5%BC%83%E4%BC%A0%E9%80%81%E9%97%A8" Margin="0,0,0,-8">废弃传送门</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%8F%A4%E8%BF%B9%E5%BA%9F%E5%A2%9F" Margin="0,0,0,-8">古迹废墟</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>会在主岛的两个较矮、较细的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>上方生成。</Paragraph></ListItem>
+<ListItem><Paragraph>复活<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E9%BE%99" Margin="0,0,0,-8">末影龙</local:MyTextButton></Underline>时，包含<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%BB%91%E6%9B%9C%E7%9F%B3%E6%9F%B1" Margin="0,0,0,-8">黑曜石柱</local:MyTextButton></Underline>在重新生成时也会生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
-
-</List><Paragraph Style="{StaticResource H3}">用途</Paragraph><List><!-- body -->
-<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>中，在樱花树林中对着<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8D%89%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">草方块</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>，也有小概率生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph>多个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>可以放置在同一格内，这与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%B7%E6%B3%A1%E8%8F%9C" Margin="0,0,0,-8">海泡菜</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%A1%E7%83%9B" Margin="0,0,0,-8">蜡烛</local:MyTextButton></Underline>类似。</Paragraph></ListItem>
-<ListItem><Paragraph>最多可以在一个方块空间内放置4簇。</Paragraph></ListItem>
-<ListItem><Paragraph>对着不满4簇花的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>会增加1簇花；对着含有4簇花的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>使用<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A8%E7%B2%89" Margin="0,0,0,-8">骨粉</local:MyTextButton></Underline>会掉落1个新的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87" Margin="0,0,0,-8">粉红色花簇</local:MyTextButton></Underline>可用于吸引、繁殖<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>以及加速幼年<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>的成长。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%9C%9C%E8%9C%82" Margin="0,0,0,-8">蜜蜂</local:MyTextButton></Underline>也会采集它的花粉。</Paragraph></ListItem>
-<!-- end_body -->
 </List>
-<Paragraph>图为俯瞰视角下樱花树林中的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%89%E7%BA%A2%E8%89%B2%E8%8A%B1%E7%B0%87">粉红色花簇</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph Style="{StaticResource H3}">特性</Paragraph>
+<List><ListItem><Paragraph>类似于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%8E%BB%E7%92%83%E6%9D%BF" Margin="0,0,0,-8">玻璃板</local:MyTextButton></Underline>，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>会根据周围<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>的连接情况呈现为5种不同形状。</Paragraph></ListItem>
+</List>
+<!--
+<Paragraph Style="{StaticResource H3}">用途</Paragraph>
+<List>
+</List> -->
+<Paragraph>图为沙漠<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84">村庄</local:MyTextButton></Underline>中自然生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86">铁栏杆</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -208,7 +209,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-16" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -280,7 +281,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </Grid>
 <TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-11-23" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="访问原址" ToolTip="在 MC 官网上查看该页面" EventType="打开网页" Margin="0,0,0,12"
-    EventData="https://www.minecraft.net/en-us/article/trail-ruins" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
+    EventData="https://www.minecraft.net/en-us/article/mineshaft" LogoScale="1.05" Logo="{StaticResource CreeperIcon}" HorizontalAlignment="Left"/>
 <StackPanel Margin="16,0,23,20" VerticalAlignment="bottom">
     <Grid>
       <Grid.ColumnDefinitions>
@@ -313,7 +314,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241216:2b4c0ff" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241223:f756cc5" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
@@ -322,8 +323,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
         <LineBreak/>
         <Run>更新时间: 周一下午到周二下午(本人初中生学业紧张理解一下)</Run>
         <LineBreak/>
-        <Run>内容取自</Run><Hyperlink NavigateUri="https://zh.minecraft.wiki">中文 Minecraft Wiki</Hyperlink>
-        <Run>中"本周页面"板块以及</Run><Hyperlink NavigateUri="https://minecraft.net">MC 官网</Hyperlink>。
+        <Run>内容取自</Run><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki">中文 Minecraft Wiki</local:MyTextButton>
+        <Run>中"本周页面"板块以及 </Run><local:MyTextButton EventType="打开网页" EventData="https://minecraft.net">MC 官网</local:MyTextButton>。
     </TextBlock>
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-8,0,0,10">
