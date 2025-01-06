@@ -8,7 +8,138 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
 </StackPanel.Triggers>
 <StackPanel.Resources>
 <!--Styles Starts-->
-<Style TargetType="FlowDocumentScrollViewer" >
+<Style x:Key="TabControlStyle" TargetType="{x:Type TabControl}">
+    <Setter Property="Padding" Value="2"/>
+    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderBrush" Value="#FFACACAC"/>
+    <Setter Property="BorderThickness" Value="0"/>
+    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabControl}">
+                    <Grid x:Name="templateRoot" ClipToBounds="True" SnapsToDevicePixels="True" KeyboardNavigation.TabNavigation="Local">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="ColumnDefinition0"/>
+                            <ColumnDefinition x:Name="ColumnDefinition1" Width="0"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="RowDefinition0" Height="Auto"/>
+                            <RowDefinition x:Name="RowDefinition1" Height="*"/>
+                        </Grid.RowDefinitions>
+                    <UniformGrid x:Name="HeaderPanel" Rows="1" Background="Transparent" Grid.Column="0" IsItemsHost="True" Margin="0" Grid.Row="0" KeyboardNavigation.TabIndex="1" Panel.ZIndex="1"/>
+                    <Line X1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" Stroke="White" StrokeThickness="0.1" VerticalAlignment="Bottom" Margin="0 0 0 1" SnapsToDevicePixels="True"/>
+                    <Border x:Name="ContentPanel" BorderBrush="{DynamicResource ColorBrush2}" BorderThickness="0" Background="Transparent" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained" Grid.Row="1" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" CornerRadius="7">
+                        <ContentPresenter x:Name="PART_SelectedContentHost" ContentTemplate="{TemplateBinding SelectedContentTemplate}" Content="{TemplateBinding SelectedContent}" ContentStringFormat="{TemplateBinding SelectedContentStringFormat}" ContentSource="SelectedContent" Margin="0" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Border>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <Trigger Property="TabStripPlacement" Value="Bottom">
+                        <Setter Property="Grid.Row" TargetName="HeaderPanel" Value="1"/>
+                        <Setter Property="Grid.Row" TargetName="ContentPanel" Value="0"/>
+                        <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
+                        <Setter Property="Height" TargetName="RowDefinition1" Value="Auto"/>
+                    </Trigger>
+                    <Trigger Property="TabStripPlacement" Value="Left">
+                        <Setter Property="Grid.Row" TargetName="HeaderPanel" Value="0"/>
+                        <Setter Property="Grid.Row" TargetName="ContentPanel" Value="0"/>
+                        <Setter Property="Grid.Column" TargetName="HeaderPanel" Value="0"/>
+                        <Setter Property="Grid.Column" TargetName="ContentPanel" Value="1"/>
+                        <Setter Property="Width" TargetName="ColumnDefinition0" Value="Auto"/>
+                        <Setter Property="Width" TargetName="ColumnDefinition1" Value="*"/>
+                        <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
+                        <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
+                    </Trigger>
+                    <Trigger Property="TabStripPlacement" Value="Right">
+                        <Setter Property="Grid.Row" TargetName="HeaderPanel" Value="0"/>
+                        <Setter Property="Grid.Row" TargetName="ContentPanel" Value="0"/>
+                        <Setter Property="Grid.Column" TargetName="HeaderPanel" Value="1"/>
+                        <Setter Property="Grid.Column" TargetName="ContentPanel" Value="0"/>
+                        <Setter Property="Width" TargetName="ColumnDefinition0" Value="*"/>
+                        <Setter Property="Width" TargetName="ColumnDefinition1" Value="Auto"/>
+                        <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
+                        <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
+                    </Trigger>
+                    <Trigger Property="IsEnabled" Value="False">
+                        <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+<Style x:Key="TabItemStyle" TargetType="{x:Type TabItem}">
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="BorderBrush" Value="#fff"/>
+    <Setter Property="Margin" Value="0,0,0,8"/>
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="{x:Type TabItem}">
+                <Grid x:Name="templateRoot"  SnapsToDevicePixels="True" Background="Transparent">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border x:Name="ContentPanel" BorderBrush="{DynamicResource ColorBrush2}" BorderThickness="0,0,0,2" Background="White" Grid.Column="0" KeyboardNavigation.DirectionalNavigation="Contained"
+                        Grid.Row="0" KeyboardNavigation.TabIndex="2" KeyboardNavigation.TabNavigation="Local" CornerRadius="7" Height="30" Margin="2,0,2,0"/>
+                    <TextBlock x:Name="txt" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Text="{TemplateBinding Header}" ToolTip="{TemplateBinding Header}" Foreground="{TemplateBinding Foreground}" TextTrimming="CharacterEllipsis"/>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Top"/>
+                        </MultiDataTrigger.Conditions>
+
+                        <Setter Property="Foreground" TargetName="txt" Value="Blue"/>
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Left"/>
+                        </MultiDataTrigger.Conditions>
+                            <Setter Property="Opacity" TargetName="templateRoot" Value="0.56"/>
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Bottom"/>
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Opacity" TargetName="templateRoot" Value="0.56"/>
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Right"/>
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Opacity" TargetName="templateRoot" Value="0.56"/>
+                    </MultiDataTrigger>
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Top"/>
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Opacity" TargetName="templateRoot" Value="0.56"/>
+                    </MultiDataTrigger>
+
+                    <MultiDataTrigger>
+                        <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="true"/>
+                            <Condition Binding="{Binding TabStripPlacement, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type TabControl}}}" Value="Top"/>
+                        </MultiDataTrigger.Conditions>
+                        <Setter Property="Panel.ZIndex" Value="1"/>
+                        <Setter Property="Foreground" TargetName="txt" Value="Green"/>
+                    </MultiDataTrigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+<Style TargetType="FlowDocumentScrollViewer">
 <Setter Property="IsSelectionEnabled" Value="False"/>
 <Setter Property="VerticalScrollBarVisibility" Value="Hidden"/>
 <Setter Property="Margin" Value="0"/>
@@ -20,7 +151,8 @@ xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
 <Setter Property="Margin" Value="20,40,20,20"/>
 </Style><Style TargetType="local:MyCard" x:Key="Card" >
 <Setter Property="Margin" Value="0,5"/>
-</Style><Style TargetType="TextBox" x:Key="InlineCode">
+</Style>
+<Style TargetType="TextBox" x:Key="InlineCode">
     <Setter Property="FontSize" Value="14" />
     <Setter Property="IsReadOnly" Value="True" />
     <Setter Property="Margin" Value="2,0,2,-4" />
@@ -126,7 +258,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 凌云 @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激! \n
 排列没啥顺序，个个我都非常非常非常谢谢你们!
 </sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -164,43 +296,39 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     </Grid>
 </Border>
 </local:MyCard>
-<local:MyCard Title="中文 Minecraft Wiki 摘录 - 本周页面" CanSwap="True" IsSwaped="false" Style="{StaticResource Card}" >
+<TabControl Style="{StaticResource TabControlStyle}" FontFamily="Microsoft YaHei UI" FontSize="17">
+    <TabItem Header="中文 Minecraft Wiki 摘录 - 本周页面" Style="{StaticResource TabItemStyle}">
+<local:MyCard>
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/GoldenAppleComparison.png?format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/GoldenAppleComparison.png?format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="金苹果" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="苍白垂须" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">金苹果</Paragraph>
+<Paragraph Style="{StaticResource H2}">苍白垂须</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>是一种能被玩家食用的特殊<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A3%9F%E7%89%A9" Margin="0,0,0,-8">食物</local:MyTextButton></Underline>类物品，能给予有益状态效果。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>是一种生成于苍白之园生物群系的方块。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>可以使用8个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E9%94%AD" Margin="0,0,0,-8">金锭</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">苹果</local:MyTextButton></Underline>合成。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>还可以在各种结构的箱子中找到或通过<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%AE%9D%E5%BA%93" Margin="0,0,0,-8">宝库</local:MyTextButton></Underline>获得。</Paragraph></ListItem>
-<ListItem><Paragraph>附魔<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>的稀有变种，可以给予更强的效果，但无法合成。</Paragraph></ListItem>
-<ListItem><Paragraph>附魔<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>只能在部分结构的箱子中找到或通过不祥<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%AE%9D%E5%BA%93" Margin="0,0,0,-8">宝库</local:MyTextButton></Underline>获得。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>会自然生成于苍白之园生物群系中<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>的树干和树叶下方。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>也可以通过与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%81%E6%B5%AA%E5%95%86%E4%BA%BA" Margin="0,0,0,-8">流浪商人</local:MyTextButton></Underline>交易获得。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
-<Paragraph Style="{StaticResource H3}">用途 &amp; 特性</Paragraph>
-<List>
-<ListItem><Paragraph>普通<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>会提供2分钟的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BC%A4%E5%AE%B3%E5%90%B8%E6%94%B6" Margin="0,0,0,-8">伤害吸收</local:MyTextButton></Underline>I效果与5秒的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%94%9F%E5%91%BD%E6%81%A2%E5%A4%8D" Margin="0,0,0,-8">生命恢复</local:MyTextButton></Underline>II效果。</Paragraph></ListItem>
-<ListItem><Paragraph>附魔<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>会提供2分钟的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BC%A4%E5%AE%B3%E5%90%B8%E6%94%B6" Margin="0,0,0,-8">伤害吸收</local:MyTextButton></Underline>IV效果、20秒[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>]/30秒[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88" Margin="0,0,0,-8">基岩版</local:MyTextButton></Underline>]的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%94%9F%E5%91%BD%E6%81%A2%E5%A4%8D" Margin="0,0,0,-8">生命恢复</local:MyTextButton></Underline>II、5分钟<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%8A%97%E7%81%AB" Margin="0,0,0,-8">抗火</local:MyTextButton></Underline>和5分钟<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E4%BC%A4%E5%AE%B3%E5%90%B8%E6%94%B6" Margin="0,0,0,-8">伤害吸收</local:MyTextButton></Underline>I。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>可用于治愈<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%83%B5%E5%B0%B8%E6%9D%91%E6%B0%91" Margin="0,0,0,-8">僵尸村民</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>和附魔<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C" Margin="0,0,0,-8">金苹果</local:MyTextButton></Underline>都可用于提高驯服<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%B4" Margin="0,0,0,-8">驴</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A1" Margin="0,0,0,-8">骡</local:MyTextButton></Underline>的概率，使<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%B4" Margin="0,0,0,-8">驴</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A1" Margin="0,0,0,-8">骡</local:MyTextButton></Underline>恢复生命值，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B9%81%E6%AE%96" Margin="0,0,0,-8">繁殖</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%B4" Margin="0,0,0,-8">驴</local:MyTextButton></Underline>，加速幼年<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>、幼年<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%B4" Margin="0,0,0,-8">驴</local:MyTextButton></Underline>、幼年<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%AA%A1" Margin="0,0,0,-8">骡</local:MyTextButton></Underline>的成长。</Paragraph></ListItem>
+<Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
+<ListItem><Paragraph>没有被<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%89%AA%E5%88%80" Margin="0,0,0,-8">剪刀</local:MyTextButton></Underline>或具有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>的工具挖掘破坏时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>被破坏后不会掉落。</Paragraph></ListItem>
+<ListItem><Paragraph>当放置在苍白橡木原木、苍白橡木、去皮苍白橡木原木、去皮苍白橡木[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>]或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>树叶下方时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>每<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%BB" Margin="0,0,0,-8">刻</local:MyTextButton></Underline>有1⁄500的概率发出特殊的环境音效。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>不会自然生长。</Paragraph></ListItem>
+<ListItem><Paragraph>对<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>使用骨粉会使其向下生长一格。</Paragraph></ListItem>
 </List>
-<!--
-<Paragraph Style="{StaticResource H3}">用途</Paragraph>
-<List>
-</List> -->
-<Paragraph>图为物品展示框中的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C">金苹果</local:MyTextButton></Underline>和附魔<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%87%91%E8%8B%B9%E6%9E%9C">金苹果</local:MyTextButton></Underline>。</Paragraph>
+
+<Paragraph>图为苍白之园中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB">苍白垂须</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -213,12 +341,14 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2024-12-30" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-1-6" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
 </local:MyCard>
-<local:MyCard Title="Minecraft官方博文 - 识海漫谈" CanSwap="True" IsSwaped="false" Margin="0,5,0,10">
+    </TabItem>
+<TabItem Header="Minecraft官方博文 - 识海漫谈" Style="{StaticResource TabItemStyle}">
+<local:MyCard>
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
@@ -228,49 +358,49 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </Border>
 <Border Style="{StaticResource TitleBorder}">
 <TextBlock Style="{StaticResource TitleBlock}" Text="废弃矿井" />
-</Border><FlowDocumentScrollViewer >
+</Border><FlowDocumentScrollViewer>
 <FlowDocument>
 <Paragraph Style="{StaticResource H2}">结构寻访：废弃矿井</Paragraph>
 <Paragraph Style="{StaticResource H5}">昔人已乘黄鹤去，此地空余黄鹤楼。</Paragraph>
-<Paragraph Margin="0,0">当你四处跑图时，每隔一段时间，你就会偶然发现先人的足迹。</Paragraph>
-<Paragraph Margin="0,0">在你考古时发现的陶片，通向下界的废弃传送门，以及久已灭绝物种的巨大化石，无不揭示了你所探索世界的绵长历史。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">但与这些看来时代久远的文物不同，其中的一些显得更为接近我们所生活的年代。</Paragraph>
-<Paragraph Margin="0,0">这当中最好的例子便是废弃矿井——它会偶然在深洞中出现。</Paragraph>
-<Paragraph Margin="0,0">它清楚地证明了先人尝试榨干主世界资源的企图，这可能就是钻石难以找到的原因吧！</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">当你四处跑图时，每隔一段时间，你就会偶然发现先人的足迹。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在你考古时发现的陶片，通向下界的废弃传送门，以及久已灭绝物种的巨大化石，无不揭示了你所探索世界的绵长历史。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但与这些看来时代久远的文物不同，其中的一些显得更为接近我们所生活的年代。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">这当中最好的例子便是废弃矿井——它会偶然在深洞中出现。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">它清楚地证明了先人尝试榨干主世界资源的企图，这可能就是钻石难以找到的原因吧！</Paragraph>
 <BlockUIContainer>
 <StackPanel>
 <Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6f7b24e.png"/>
 <TextBlock Text="游戏中的废弃矿井" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0">第一个废弃矿井的出现始于2011年6月的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%92%E9%99%A9%E6%9B%B4%E6%96%B0" Margin="0">冒险更新</local:MyTextButton></Underline>。</Paragraph>
-<Paragraph Margin="0,0">它易于辨认——主体为由3x3隧道构成的密集网络，布有橡木和铁轨，且穿插着大量的蜘蛛网。其在与峡谷相交时最容易被发现。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">矿物资源和战利品使它们成为玩家们探索的好去处：</Paragraph>
-<Paragraph Margin="0,0">在废弃矿井的墙壁上，你会常常看见矿工们遗忘的矿物，这使得探索废弃矿井成为初期快速积攒铁锭、铜锭和金锭等基础资源的方法之一。</Paragraph>
-<Paragraph Margin="0,0">但这还不是全部，那些神秘的矿工们还留下了许多满载着食物、火把、铁路设施和其他好东西的运输矿车。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">但也请在探索时保持警惕，因为废弃矿井中的黑暗环境造就了一个怪物刷新的绝佳地点。</Paragraph>
-<Paragraph Margin="0,0">不仅有一般的亡灵生物和苦力怕，你还会找到在废弃矿井中找到一种特殊的&quot;洞穴蜘蛛&quot;</Paragraph>
-<Paragraph Margin="0,0">这个体型更小的蜘蛛种群不仅更难以击中，还在攻击时造成负面的状态效果。千万要远离。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">第一个废弃矿井的出现始于2011年6月的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%86%92%E9%99%A9%E6%9B%B4%E6%96%B0" Margin="0">冒险更新</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">它易于辨认——主体为由3x3隧道构成的密集网络，布有橡木和铁轨，且穿插着大量的蜘蛛网。其在与峡谷相交时最容易被发现。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">矿物资源和战利品使它们成为玩家们探索的好去处：</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在废弃矿井的墙壁上，你会常常看见矿工们遗忘的矿物，这使得探索废弃矿井成为初期快速积攒铁锭、铜锭和金锭等基础资源的方法之一。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但这还不是全部，那些神秘的矿工们还留下了许多满载着食物、火把、铁路设施和其他好东西的运输矿车。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但也请在探索时保持警惕，因为废弃矿井中的黑暗环境造就了一个怪物刷新的绝佳地点。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">不仅有一般的亡灵生物和苦力怕，你还会找到在废弃矿井中找到一种特殊的&quot;洞穴蜘蛛&quot;</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">这个体型更小的蜘蛛种群不仅更难以击中，还在攻击时造成负面的状态效果。千万要远离。</Paragraph>
 <BlockUIContainer>
 <StackPanel>
 <Image Style="{StaticResource InnerImage}" Source="https://www.helloimg.com/i/2024/12/15/675ebe6faa984.png"/>
 <TextBlock Text="现实中的矿巷 —— 图片版权协议: EwkaC // CC BY-SA 4.0" Style="{StaticResource imgTitle}" />
 </StackPanel>
 </BlockUIContainer>
-<Paragraph Margin="0,0">在真实世界中，人类已经为了获取资源而建造了数千年的矿井。</Paragraph>
-<Paragraph Margin="0,0">最早的地下矿井仅仅像是经过人工扩张的自然洞穴。但罗马人大幅度改进了相关的工艺水准——他们开凿了通往矿井的运水槽，这样，他们不仅可以用水定位矿脉，还能清除矿渣和残骸。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">在矿业术语中，“矿井”指将人和物带上地面的垂直隧道，通常使用某种升降机。</Paragraph>
-<Paragraph Margin="0,0">而游戏中的横向隧道则叫做“矿巷”或“坑道”，就像在游戏中一样，它们通常由木结构支撑起来以减少发生坍塌事故的风险。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">当今，你可能会以为采矿工业已经高度机器化并由机器人完成——在一些地方的确如此。</Paragraph>
-<Paragraph Margin="0,0">但在大多数地方，采矿的工作仍依赖于人们在恶劣和危险的条件下辛勤工作的成果。</Paragraph>
-<Paragraph Margin="0,0">采矿对环境的负面影响也是一个日益严重的问题，有人担心生活所需的最重要的一些资源正因而逐渐枯竭。</Paragraph>
-<Paragraph Margin="0,0"><!-- 换行 --></Paragraph>
-<Paragraph Margin="0,0">在游戏中，供你游玩的世界是无限的——如果你在一个地方挖完了所有煤矿，你大可以直接换个地方继续挖。地球上？我们不可能再那样“奢侈”了……</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在真实世界中，人类已经为了获取资源而建造了数千年的矿井。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">最早的地下矿井仅仅像是经过人工扩张的自然洞穴。但罗马人大幅度改进了相关的工艺水准——他们开凿了通往矿井的运水槽，这样，他们不仅可以用水定位矿脉，还能清除矿渣和残骸。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在矿业术语中，“矿井”指将人和物带上地面的垂直隧道，通常使用某种升降机。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">而游戏中的横向隧道则叫做“矿巷”或“坑道”，就像在游戏中一样，它们通常由木结构支撑起来以减少发生坍塌事故的风险。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">当今，你可能会以为采矿工业已经高度机器化并由机器人完成——在一些地方的确如此。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">但在大多数地方，采矿的工作仍依赖于人们在恶劣和危险的条件下辛勤工作的成果。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black">采矿对环境的负面影响也是一个日益严重的问题，有人担心生活所需的最重要的一些资源正因而逐渐枯竭。</Paragraph>
+<Paragraph Margin="0,0" Foreground="black"><!-- 换行 --></Paragraph>
+<Paragraph Margin="0,0" Foreground="black">在游戏中，供你游玩的世界是无限的——如果你在一个地方挖完了所有煤矿，你大可以直接换个地方继续挖。地球上？我们不可能再那样“奢侈”了……</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -302,6 +432,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </StackPanel>
 </StackPanel>
 </local:MyCard>
+</TabItem>
+<TabItem Header="其他" Style="{StaticResource TabItemStyle}">
 <!-- NewsCard -->
 <local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
 <StackPanel Margin="8,35,8,15">
@@ -311,6 +443,8 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
+</TabItem>
+</TabControl>
 <local:MyCard Margin="0,10,0,14">
 <Border BorderBrush="{DynamicResource ColorBrush2}" Margin="-0.6" CornerRadius="5" BorderThickness="0,0,0,10">
 <StackPanel>
@@ -318,17 +452,17 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="241230:dafffda" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="250106:eb03ad9" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
     <TextBlock HorizontalAlignment="Left" Grid.Column="0" FontSize="13" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}">
         <Run>主页制作: 仿生猫梦见苦力怕 / CreeperIsASpy</Run>
         <LineBreak/>
-        <Run>更新时间: 周一下午到周二下午(本人初中生学业紧张理解一下)</Run>
+        <Run>更新时间: 周一下午到周二下午（本人初中生学业紧张理解一下）</Run>
         <LineBreak/>
-        <Run>内容取自</Run><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki" Margin="0,0,0,-2" Foreground="{DynamicResource ColorBrush4}">中文 Minecraft Wiki</local:MyTextButton></Underline>
-        <Run>中"本周页面"板块以及 </Run><Underline><local:MyTextButton EventType="打开网页" EventData="https://minecraft.net" Margin="0,0,0,-2" Foreground="{DynamicResource ColorBrush4}">MC 官网</local:MyTextButton></Underline>。
+        <Run>内容取自</Run><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki">中文 Minecraft Wiki</local:MyTextButton></Underline>
+        <Run>中“本周页面”板块以及 </Run><Underline><local:MyTextButton EventType="打开网页" EventData="https://minecraft.net">MC 官网</local:MyTextButton></Underline>。
     </TextBlock>
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="-8,0,0,10">
@@ -350,7 +484,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     LogoScale="0.9" Logo="M6.26 21.388H6c-.943 0-1.414 0-1.707-.293C4 20.804 4 20.332 4 19.389v-1.112c0-.518 0-.777.133-1.009s.334-.348.736-.582c2.646-1.539 6.403-2.405 8.91-.91q.253.151.45.368a1.49 1.49 0 0 1-.126 2.134a1 1 0 0 1-.427.24q.18-.021.345-.047c.911-.145 1.676-.633 2.376-1.162l1.808-1.365a1.89 1.89 0 0 1 2.22 0c.573.433.749 1.146.386 1.728c-.423.678-1.019 1.545-1.591 2.075s-1.426 1.004-2.122 1.34c-.772.373-1.624.587-2.491.728c-1.758.284-3.59.24-5.33-.118a15 15 0 0 0-3.017-.308m4.601-18.026C11.368 2.454 11.621 2 12 2s.632.454 1.139 1.363l.13.235c.145.259.217.388.329.473s.252.117.532.18l.254.058c.984.222 1.476.334 1.593.71s-.218.769-.889 1.553l-.174.203c-.19.223-.285.334-.328.472s-.029.287 0 .584l.026.27c.102 1.047.152 1.57-.154 1.803s-.767.02-1.688-.404l-.239-.11c-.261-.12-.392-.18-.531-.18s-.27.06-.531.18l-.239.11c-.92.425-1.382.637-1.688.404s-.256-.756-.154-1.802l.026-.271c.029-.297.043-.446 0-.584s-.138-.25-.328-.472l-.174-.203c-.67-.784-1.006-1.177-.889-1.553s.609-.488 1.593-.71l.254-.058c.28-.063.42-.095.532-.18s.184-.214.328-.473zm8.569 4.319c.254-.455.38-.682.57-.682s.316.227.57.682l.065.117c.072.13.108.194.164.237s.126.058.266.09l.127.028c.492.112.738.167.796.356s-.109.384-.444.776l-.087.101c-.095.112-.143.168-.164.237s-.014.143 0 .292l.013.135c.05.523.076.785-.077.901s-.383.01-.844-.202l-.12-.055c-.13-.06-.196-.09-.265-.09c-.07 0-.135.03-.266.09l-.119.055c-.46.212-.69.318-.844.202c-.153-.116-.128-.378-.077-.901l.013-.135c.014-.15.022-.224 0-.292c-.021-.07-.069-.125-.164-.237l-.087-.101c-.335-.392-.503-.588-.444-.776s.304-.244.796-.356l.127-.028c.14-.032.21-.048.266-.09c.056-.043.092-.108.164-.237zm-16 0C3.685 7.227 3.81 7 4 7s.316.227.57.682l.065.117c.072.13.108.194.164.237s.126.058.266.09l.127.028c.492.112.738.167.797.356c.058.188-.11.384-.445.776l-.087.101c-.095.112-.143.168-.164.237s-.014.143 0 .292l.013.135c.05.523.076.785-.077.901s-.384.01-.844-.202l-.12-.055c-.13-.06-.196-.09-.265-.09c-.07 0-.135.03-.266.09l-.119.055c-.46.212-.69.318-.844.202c-.153-.116-.128-.378-.077-.901l.013-.135c.014-.15.022-.224 0-.292c-.021-.07-.069-.125-.164-.237l-.087-.101c-.335-.392-.503-.588-.445-.776c.059-.189.305-.244.797-.356l.127-.028c.14-.032.21-.048.266-.09c.056-.043.092-.108.164-.237z"/>
     </StackPanel>
   </Grid>
-  </StackPanel>
+</StackPanel>
 </Border>
 </local:MyCard>
 </StackPanel>
