@@ -2,10 +2,6 @@
 xmlns:sys="clr-namespace:System;assembly=mscorlib"
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:local="clr-namespace:PCL;assembly=Plain Craft Launcher 2">
-<!--Animations Starts-->
-<StackPanel.Triggers>
-
-</StackPanel.Triggers>
 <StackPanel.Resources>
 <!--Styles Starts-->
 <Style x:Key="TabControlStyle" TargetType="{x:Type TabControl}">
@@ -258,7 +254,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 凌云 @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激! \n
 排列没啥顺序，个个我都非常非常非常谢谢你们!
 </sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -302,33 +298,33 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/End_stone_in_the_End.png?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Bedrock_1.21.50.28_PatchNotes.png/700px-Bedrock_1.21.50.28_PatchNotes.png??format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/End_stone_in_the_End.png?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="苍白垂须" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="末地石" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">苍白垂须</Paragraph>
+<Paragraph Style="{StaticResource H2}">末地石</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>是一种生成于苍白之园生物群系的方块。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>是一种淡黄色岩石<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>会自然生成于苍白之园生物群系中<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>的树干和树叶下方。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>也可以通过与<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B5%81%E6%B5%AA%E5%95%86%E4%BA%BA" Margin="0,0,0,-8">流浪商人</local:MyTextButton></Underline>交易获得。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>只会在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>自然生成，是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>所有地形的基本<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">特性 &amp; 用途</Paragraph><List>
-<ListItem><Paragraph>没有被<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%89%AA%E5%88%80" Margin="0,0,0,-8">剪刀</local:MyTextButton></Underline>或具有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>的工具挖掘破坏时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>被破坏后不会掉落。</Paragraph></ListItem>
-<ListItem><Paragraph>当放置在苍白橡木原木、苍白橡木、去皮苍白橡木原木、去皮苍白橡木[仅<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/Java%E7%89%88" Margin="0,0,0,-8">Java版</local:MyTextButton></Underline>]或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E6%A9%A1%E6%A0%91" Margin="0,0,0,-8">苍白橡树</local:MyTextButton></Underline>树叶下方时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>每<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%BB" Margin="0,0,0,-8">刻</local:MyTextButton></Underline>有1⁄500的概率发出特殊的环境音效。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>不会自然生长。</Paragraph></ListItem>
-<ListItem><Paragraph>对<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB" Margin="0,0,0,-8">苍白垂须</local:MyTextButton></Underline>使用骨粉会使其向下生长一格。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8" Margin="0,0,0,-8">返回传送门</local:MyTextButton></Underline>状态更新时会重新生成，包括构成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%BF%94%E5%9B%9E%E4%BC%A0%E9%80%81%E9%97%A8" Margin="0,0,0,-8">返回传送门</local:MyTextButton></Underline>结构的16个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>折跃门第一次被使用并生成新的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>折跃门时，如果目标位置所处区块没有任何<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>，则在Y=75处生成一个由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>构成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0" Margin="0,0,0,-8">末地</local:MyTextButton></Underline>浮岛。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>既不能被<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E4%BA%BA" Margin="0,0,0,-8">末影人</local:MyTextButton></Underline>捡起来，也不能被<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%BD%B1%E9%BE%99" Margin="0,0,0,-8">末影龙</local:MyTextButton></Underline>摧毁。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B4%AB%E9%A2%82%E8%8A%B1" Margin="0,0,0,-8">紫颂花</local:MyTextButton></Underline>只能生长在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>上。</Paragraph></ListItem>
+<ListItem><Paragraph>作为合成材料，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>可用于合成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3" Margin="0,0,0,-8">末地石</local:MyTextButton></Underline>砖，也可用于复制眼眸盔甲纹饰锻造模板。</Paragraph></ListItem>
 </List>
 
-<Paragraph>图为苍白之园中生成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%8B%8D%E7%99%BD%E5%9E%82%E9%A1%BB">苍白垂须</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0">末地</local:MyTextButton></Underline>中的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9C%AB%E5%9C%B0%E7%9F%B3">末地石</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -341,7 +337,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-1-6" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-1-14" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -439,7 +435,9 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
 <StackPanel Margin="8,35,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" />
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
+	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w02a" Info="装饰更新"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=25w02a" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
@@ -452,7 +450,7 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     <StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,4">
     <TextBlock FontSize="18" Foreground="{DynamicResource ColorBrush2}"><Bold>PCL2 杂志主页</Bold></TextBlock>
-    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="250106:eb03ad9" ToolTip="当前版本号(非git)"
+    <local:MyIconTextButton ColorType="Highlight" Margin="4,0" Text="250114:40178a4" ToolTip="当前版本号(非git)"
     LogoScale="1.1" Logo="M11.93 8.5a4.002 4.002 0 0 1-7.86 0H.75a.75.75 0 0 1 0-1.5h3.32a4.002 4.002 0 0 1 7.86 0h3.32a.75.75 0 0 1 0 1.5Zm-1.43-.75a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z" />
     </StackPanel>
     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,10">
