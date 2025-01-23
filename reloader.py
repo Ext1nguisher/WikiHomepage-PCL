@@ -67,6 +67,18 @@ def get_version():
     return vid
 
 
+def get_img_alt():
+    return gr()[-1].replace("<ListItem>", '').replace("</ListItem>", '')
+
+
+def get_wiki_page():
+    return list(get_link_txt(str(obj.find('div', class_="weekly-content"))).values())[0]
+
+
+def get_topic():
+    return list(get_link_txt(str(obj.find('div', class_="weekly-content"))).keys())[0]
+
+
 def update():
     now = datetime.datetime.now()
     content_text = '''<StackPanel Margin="0,-10,0,0"
@@ -562,12 +574,12 @@ Mfn233 @ Github(Mfn233) 为主页提供最开始的技术支持支持和鼓励 \
     with open("Custom.xaml", "w", encoding='UTF-8') as f:
         f.write(content_text % {
             'datetime': f'最后更新: {now.strftime("%Y-%m-%d")}',
-            'WikiPage': list(get_link_txt(str(obj.find('div', class_="weekly-content"))).values())[0],
-            'topic': list(get_link_txt(str(obj.find('div', class_="weekly-content"))).keys())[0],
-            'intro': gr()[0],
-            'intro_2': gr()[1],
-            'body': '\n'.join(gr()[2:-1]),
-            'alt': gr()[-1].replace("<ListItem>", '').replace("</ListItem>", ''),
+            'WikiPage': get_wiki_page(),
+            'topic': get_topic(),
+            'intro': gr()[0],                       # 内容的第一句
+            'intro_2': gr()[1],                     # 内容的第二句
+            'body': '\n'.join(gr()[2:-1]),          # 内容剩余部分
+            'alt': get_img_alt(),
             'img': gs(),
             'NewsCard': get_news_card(),
             'version': get_version()
@@ -581,6 +593,7 @@ def print_out():
     print(f'BODY:    \n{BODYTXT}\n')
     ALTTXT = gr()[-1].replace("<ListItem>", '').replace("</ListItem>", '')
     print(f'ALT:\n\t{ALTTXT}\n')
+    print(f'IMG: \n\t{gs()}\n')
     print(f'$NEWSCARD:     \n{get_news_card()}\n')
     print(f'$VID:     {get_version()}')
 
