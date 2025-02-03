@@ -1,5 +1,5 @@
-<!-- "The Magazine Homepage for PCL2" made by CreeperIsASpy. Copyright 2024 CreeperIsASpy, all rights reserved. (CC BY-NC-SA 4.0).-->
-<!-- 由 仿生猫梦见苦力怕 制作该 "PCL2 杂志主页"。@仿生猫梦见苦力怕 / CreeperIsASpy 版权所有，保留所有权力。（使用CC BY-NC-SA 4.0 授权代码部分）。-->
+<!-- "The Magazine Homepage for PCL2" made by CreeperIsASpy. Copyright 2025 CreeperIsASpy, all rights reserved. (CC BY-NC-SA 4.0).-->
+<!-- 由 仿生猫梦见苦力怕 制作该 "PCL2 杂志主页"。@仿生猫梦见苦力怕 / CreeperIsASpy 版权所有，保留所有权利。（使用CC BY-NC-SA 4.0 授权代码部分内容）。-->
 
 <StackPanel Margin="0,-10,0,0"
 xmlns:sys="clr-namespace:System;assembly=mscorlib"
@@ -231,8 +231,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0</sys:String>
-<sys:String x:Key="VersionID">250127:1673815</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2</sys:String>
+<sys:String x:Key="VersionID">250203:97df989</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -271,158 +271,40 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 </Border>
 </local:MyCard>
 
-<local:MyCard Margin="0,0,0,8" Title="杂志猪页祝您——新 春 块 乐！(找错别字大赛.png)(bushi)" CanSwap="True" IsSwaped="False">
-    <StackPanel Margin="30,32,30,30" MaxWidth="500" Height="150" x:Name="SP">
-      <StackPanel.Resources>
-        <Style TargetType="TextBlock">
-          <Setter Property="HorizontalAlignment" Value="Center" />
-          <Setter Property="VerticalAlignment" Value="Center" />
-          <Setter Property="FontSize" Value="56" />
-          <Setter Property="Foreground" Value="#EF321B" />
-          <Setter Property="FontWeight" Value="Bold"/>
-        </Style>
-      </StackPanel.Resources>
-      <StackPanel.Triggers>
-        <EventTrigger RoutedEvent="StackPanel.Loaded">
-          <BeginStoryboard>
-            <Storyboard RepeatBehavior="Forever" FillBehavior="Stop">
-              <DoubleAnimation Storyboard.TargetName="Blessing" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.0001"/>
-              <DoubleAnimation Storyboard.TargetName="T1" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.0001"/>
-              <DoubleAnimation Storyboard.TargetName="T2" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.0001"/>
-              <DoubleAnimation Storyboard.TargetName="T3" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.0001"/>
-              <DoubleAnimation Storyboard.TargetName="T4" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.0001"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.1" BeginTime="0:0:0.5"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.1" BeginTime="0:0:1.3"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.1" BeginTime="0:0:2.1"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg3" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.1" BeginTime="0:0:2.9"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:3.7"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:3.7"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg3" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:3.7"/>
-              <DoubleAnimation Storyboard.TargetName="Fu1S" Storyboard.TargetProperty="ScaleX" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="FuS" Storyboard.TargetProperty="ScaleX" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="Fu2S" Storyboard.TargetProperty="ScaleX" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="Fu1S" Storyboard.TargetProperty="ScaleY" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="FuS" Storyboard.TargetProperty="ScaleY" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="Fu2S" Storyboard.TargetProperty="ScaleY" From="1" To="2.2" Duration="0:0:0.05" BeginTime="0:0:3.9"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:4.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:4.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:4.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:4.6"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:4.6"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:4.6"/>
-              <DoubleAnimation Storyboard.TargetName="FuAngle" Storyboard.TargetProperty="Angle" From="45" To="225" Duration="0:0:0.001" BeginTime="0:0:5"/>
-              <DoubleAnimation Storyboard.TargetName="FuAngle" Storyboard.TargetProperty="Angle" From="45" To="8400" Duration="0:0:6" BeginTime="0:0:5"/>
-              <DoubleAnimation Storyboard.TargetName="Fu1Angle" Storyboard.TargetProperty="Angle" From="45" To="8400" Duration="0:0:6" BeginTime="0:0:5"/>
-              <DoubleAnimation Storyboard.TargetName="Fu2Angle" Storyboard.TargetProperty="Angle" From="45" To="8800" Duration="0:0:6" BeginTime="0:0:5"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:6.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:6.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:6.2"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg1" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:7.8"/>
-              <DoubleAnimation Storyboard.TargetName="FuImg2" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.05" BeginTime="0:0:7.8"/>
-              <DoubleAnimation Storyboard.TargetName="Blessing" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.05" BeginTime="0:0:7.8"/>
-              <DoubleAnimation Storyboard.TargetName="T1" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.001" BeginTime="0:0:7.8"/>
-              <DoubleAnimation Storyboard.TargetName="T2" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.001" BeginTime="0:0:8.2"/>
-              <DoubleAnimation Storyboard.TargetName="T3" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.001" BeginTime="0:0:8.6"/>
-              <DoubleAnimation Storyboard.TargetName="T4" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.001" BeginTime="0:0:9"/>
-            </Storyboard>
-          </BeginStoryboard>
-        </EventTrigger>
-      </StackPanel.Triggers>
-      <Grid> <!-- 如果要看轮廓线可以加 ShowGridLines="True" 属性 -->
-        <Grid.RowDefinitions>
-          <RowDefinition Height="60" />
-          <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition />
-          <ColumnDefinition />
-          <ColumnDefinition />
-          <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <Image Source="https://image.stapxs.cn/i/2024/02/09/fu.png" MaxHeight="60" RenderTransformOrigin="0.5,0.5" Grid.Column="0" Grid.Row="1" x:Name="FuImg1" Opacity="0">
-          <Image.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform x:Name="Fu1S"/>
-                <SkewTransform/>
-                <RotateTransform Angle="45" x:Name="Fu1Angle"/>
-                <TranslateTransform/>
-            </TransformGroup>
-          </Image.RenderTransform>
-        </Image>
-        <TextBlock Text="新" Grid.Column="0" x:Name="T1" Grid.Row="1"/>
-        <Image Source="https://image.stapxs.cn/i/2024/02/09/fu.png" MaxHeight="60" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.Row="1" x:Name="FuImg" Opacity="0">
-          <Image.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform x:Name="FuS"/>
-                <SkewTransform/>
-                <RotateTransform Angle="45" x:Name="FuAngle"/>
-                <TranslateTransform x:Name="FuPos"/>
-            </TransformGroup>
-          </Image.RenderTransform>
-        </Image>
-        <TextBlock Text="春" Grid.Column="1" x:Name="T2" Grid.Row="1"/>
-        <Image Source="https://image.stapxs.cn/i/2024/02/09/fu.png" MaxHeight="60" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.Row="1" x:Name="FuImg2" Opacity="0">
-          <Image.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform x:Name="Fu2S"/>
-                <SkewTransform/>
-                <RotateTransform Angle="45" x:Name="Fu2Angle"/>
-                <TranslateTransform/>
-            </TransformGroup>
-          </Image.RenderTransform>
-        </Image>
-        <TextBlock Text="块" Grid.Column="2" x:Name="T3" Grid.Row="1"/>
-        <Image Source="https://image.stapxs.cn/i/2024/02/09/fu.png" MaxHeight="60" RenderTransformOrigin="0.5,0.5" Grid.Column="3" Grid.Row="1" x:Name="FuImg3" Opacity="0">
-          <Image.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform x:Name="Fu3S"/>
-                <SkewTransform/>
-                <RotateTransform Angle="45" x:Name="Fu3Angle"/>
-                <TranslateTransform/>
-            </TransformGroup>
-          </Image.RenderTransform>
-        </Image>
-        <TextBlock Text="乐!" Grid.Column="3" x:Name="T4" Grid.Row="1"/>
-        <TextBlock Text="杂志猪页祝您：" Grid.Row="0" Grid.ColumnSpan="4" x:Name="Blessing"/>
-      </Grid>
-    </StackPanel>
-  </local:MyCard>
-<!-- NY-Event -->
-
 <TabControl Style="{StaticResource TabControlStyle}" FontFamily="Microsoft YaHei UI" FontSize="17">
     <TabItem Header="中文 Minecraft Wiki 摘录 - 本周页面" Style="{StaticResource TabItemStyle}">
 <local:MyCard>
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Armored_Horse.png/300px-Armored_Horse.png?format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Eyeblossoms_and_resin.jpg/350px-Eyeblossoms_and_resin.jpg?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Armored_Horse.png/300px-Armored_Horse.png?format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/Eyeblossoms_and_resin.jpg/350px-Eyeblossoms_and_resin.jpg?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="马铠" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="树脂团" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">马铠</Paragraph>
+<Paragraph Style="{StaticResource H2}">树脂团</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>是可以为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>装备的盔甲物品，共有4个变种：<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9A%AE%E9%9D%A9" Margin="0,0,0,-8">皮革</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>、铁<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>、钻石<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>和金<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>是一种来源于<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%98%8E%E6%9E%9D%E4%B9%8B%E5%BF%83" Margin="0,0,0,-8">嘎枝之心</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">合成 &amp; 生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9A%AE%E9%9D%A9" Margin="0,0,0,-8">皮革</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>可以用6个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9A%AE%E9%9D%A9" Margin="0,0,0,-8">皮革</local:MyTextButton></Underline>合成，也可以通过<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%9D%91%E6%B0%91" Margin="0,0,0,-8">村民</local:MyTextButton></Underline>交易获得。</Paragraph></ListItem>
-<ListItem><Paragraph>铁<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>、钻石<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>和金<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>可以在各种结构的箱子中找到。</Paragraph></ListItem>
+<ListItem><Paragraph>当绑定了<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%98%8E%E6%9E%9D%E4%B9%8B%E5%BF%83" Margin="0,0,0,-8">嘎枝之心</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%98%8E%E6%9E%9D" Margin="0,0,0,-8">嘎枝</local:MyTextButton></Underline>被攻击时，与其绑定的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%98%8E%E6%9E%9D%E4%B9%8B%E5%BF%83" Margin="0,0,0,-8">嘎枝之心</local:MyTextButton></Underline>周围会生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph>没有被具有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%B2%BE%E5%87%86%E9%87%87%E9%9B%86" Margin="0,0,0,-8">精准采集</local:MyTextButton></Underline>的工具挖掘破坏时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%98%8E%E6%9E%9D%E4%B9%8B%E5%BF%83" Margin="0,0,0,-8">嘎枝之心</local:MyTextButton></Underline>被破坏后会掉落1-3个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">用途 &amp; 特性</Paragraph><List>
-<ListItem><Paragraph>玩家可以为已驯服的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>装备或变更<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph>玩家手持<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>时对没有装备<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>使用可为其装备<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>，也可以在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>的交互界面中的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>槽位放入或移除<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>会提供护甲值，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9A%AE%E9%9D%A9" Margin="0,0,0,-8">皮革</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>提供3点，铁<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>提供5点，金<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>提供7点，钻石<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>提供11点。</Paragraph></ListItem>
-<ListItem><Paragraph>类似于钻石盔甲，钻石<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>会提供2点盔甲韧性。</Paragraph></ListItem>
-<ListItem><Paragraph>装备了<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%9A%AE%E9%9D%A9" Margin="0,0,0,-8">皮革</local:MyTextButton></Underline><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0" Margin="0,0,0,-8">马铠</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC" Margin="0,0,0,-8">马</local:MyTextButton></Underline>不会因接触<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%BB%86%E9%9B%AA" Margin="0,0,0,-8">细雪</local:MyTextButton></Underline>而被冰冻。</Paragraph></ListItem>
+<ListItem><Paragraph>使用附有<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%97%B6%E8%BF%90" Margin="0,0,0,-8">时运</local:MyTextButton></Underline>魔咒的工具破坏会额外掉落0-&lt;魔咒等级&gt;个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>，但掉落总数不会超过9个。</Paragraph></ListItem>
+<ListItem><Paragraph>在一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>大小的空间内可以放置多个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>，例如角落处的三个面。</Paragraph></ListItem>
+<ListItem><Paragraph>当其中一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>被破坏时，同一个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%96%B9%E5%9D%97" Margin="0,0,0,-8">方块</local:MyTextButton></Underline>空间内的其他<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>也会被破坏。</Paragraph></ListItem>
+<ListItem><Paragraph>9个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>可合成为1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9D%97" Margin="0,0,0,-8">树脂块</local:MyTextButton></Underline>，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9D%97" Margin="0,0,0,-8">树脂块</local:MyTextButton></Underline>也可分解为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2" Margin="0,0,0,-8">树脂团</local:MyTextButton></Underline>还可以被烧炼为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E7%A0%96" Margin="0,0,0,-8">树脂砖</local:MyTextButton></Underline>。</Paragraph></ListItem>
 </List>
 
-<Paragraph>图为一只穿着铁<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC%E9%93%A0">马铠</local:MyTextButton></Underline>的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%A9%AC">马</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为苍白橡树上的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%A0%91%E8%84%82%E5%9B%A2">树脂团</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -435,7 +317,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-1-20" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-2-3" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -575,8 +457,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
 	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w04a" Info="快照版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=25w04a" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w05a" Info="快照版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=25w05a" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
