@@ -231,8 +231,8 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 主页群的各位                               @ QQ群(828081791等) 为主页的开发提供持续的精神力量,快来一起咕咕咕!
 凌云                                            @ Github(JingHai-Lingyun) 提供挂载主页的oss,真的真的非常感激!
 排列没啥顺序，个个我都非常非常非常谢谢你们!</sys:String>
-<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95</sys:String>
-<sys:String x:Key="VersionID">250211:4172af8</sys:String>
+<sys:String x:Key="WikiPage">https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE</sys:String>
+<sys:String x:Key="VersionID">250217:61a1d61</sys:String>
 <Style TargetType="Border" x:Key="HeadImageBorder" >
 <Setter Property="HorizontalAlignment" Value="Center"/>
 <Setter Property="BorderThickness" Value="4"/>
@@ -277,32 +277,33 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <StackPanel Style="{StaticResource ContentStack}">
 <Border Style="{StaticResource HeadImageBorder}">
 <Border.Background>
-<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Desert_Well_near_water.png/350px-Desert_Well_near_water.png?format=original" Stretch="UniformToFill" />
+<ImageBrush ImageSource="https://zh.minecraft.wiki/images/thumb/Chain_Block_Each_Axis.png/350px-Chain_Block_Each_Axis.png?format=original" Stretch="UniformToFill" />
 </Border.Background>
-<Image Source="https://zh.minecraft.wiki/images/thumb/Desert_Well_near_water.png/350px-Desert_Well_near_water.png?format=original" Opacity="0" Stretch="Fill"/>
+<Image Source="https://zh.minecraft.wiki/images/thumb/Chain_Block_Each_Axis.png/350px-Chain_Block_Each_Axis.png?format=original" Opacity="0" Stretch="Fill"/>
 </Border>
 <Border Style="{StaticResource TitleBorder}">
-<TextBlock Style="{StaticResource TitleBlock}" Text="沙漠水井" />
+<TextBlock Style="{StaticResource TitleBlock}" Text="锁链" />
 </Border><FlowDocumentScrollViewer >
 <FlowDocument>
-<Paragraph Style="{StaticResource H2}">沙漠水井</Paragraph>
+<Paragraph Style="{StaticResource H2}">锁链</Paragraph>
 <List>
 <!-- intro -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0" Margin="0,0,0,-8">沙漠</local:MyTextButton></Underline>中由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%A0%82%E5%B2%A9" Margin="0,0,0,-8">砂岩</local:MyTextButton></Underline>等方块组成的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9C%B0%E7%89%A9" Margin="0,0,0,-8">地物</local:MyTextButton></Underline>。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>是一种金属装饰性方块。</Paragraph></ListItem>
 <!-- end_intro -->
 
 </List><Paragraph Style="{StaticResource H3}">生成</Paragraph><List><!-- intro_2 -->
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>只生成在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0" Margin="0,0,0,-8">沙漠</local:MyTextButton></Underline>生物群系中。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>会作为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A0%A1%E5%9E%92%E9%81%97%E8%BF%B9" Margin="0,0,0,-8">堡垒遗迹</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E8%AF%95%E7%82%BC%E5%AF%86%E5%AE%A4" Margin="0,0,0,-8">试炼密室</local:MyTextButton></Underline>的一部分生成，偶尔也会作为<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BA%9F%E5%BC%83%E4%BC%A0%E9%80%81%E9%97%A8" Margin="0,0,0,-8">废弃传送门</local:MyTextButton></Underline>的一部分生成。</Paragraph></ListItem>
 <!-- end_intro_2 -->
 </List>
 <Paragraph Style="{StaticResource H3}">用途 &amp; 特性</Paragraph><List>
-<ListItem><Paragraph>任何是<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0" Margin="0,0,0,-8">沙漠</local:MyTextButton></Underline>的区块有1⁄1000[仅JE]或1⁄500[仅BE]的概率生成<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>，这使得它十分罕见。</Paragraph></ListItem>
-<ListItem><Paragraph>在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%9F%BA%E5%B2%A9%E7%89%88" Margin="0,0,0,-8">基岩版</local:MyTextButton></Underline>中，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>可能以16个方块的距离成片生成。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>必须在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E5%AD%90" Margin="0,0,0,-8">沙子</local:MyTextButton></Underline>上方生成，最低生成高度高于世界最低建筑高度两格。</Paragraph></ListItem>
-<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95" Margin="0,0,0,-8">沙漠水井</local:MyTextButton></Underline>由<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%A0%82%E5%B2%A9" Margin="0,0,0,-8">砂岩</local:MyTextButton></Underline>、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%A0%82%E5%B2%A9" Margin="0,0,0,-8">砂岩</local:MyTextButton></Underline>台阶、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E5%AD%90" Margin="0,0,0,-8">沙子</local:MyTextButton></Underline>和可疑的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E5%AD%90" Margin="0,0,0,-8">沙子</local:MyTextButton></Underline>组成，内有水源方块。</Paragraph></ListItem>
+<ListItem><Paragraph>当<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%BA%9F%E5%BC%83%E7%9F%BF%E4%BA%95" Margin="0,0,0,-8">废弃矿井</local:MyTextButton></Underline>悬空生成时，<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>会随之生成以便吊起主要结构。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>可以使用2个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E7%B2%92" Margin="0,0,0,-8">铁粒</local:MyTextButton></Underline>和1个<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E9%94%AD" Margin="0,0,0,-8">铁锭</local:MyTextButton></Underline>合成，也可以在<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%A0%A1%E5%9E%92%E9%81%97%E8%BF%B9" Margin="0,0,0,-8">堡垒遗迹</local:MyTextButton></Underline>塔尖的箱子中找到。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>可以用来悬挂<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%81%AF%E7%AC%BC" Margin="0,0,0,-8">灯笼</local:MyTextButton></Underline>（以及其灵魂变种）、<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%92%9F" Margin="0,0,0,-8">钟</local:MyTextButton></Underline>或<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E5%88%B7%E6%80%AA%E7%AC%BC" Margin="0,0,0,-8">刷怪笼</local:MyTextButton></Underline>，并且<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>的纹理会无缝连接到<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E7%81%AF%E7%AC%BC" Margin="0,0,0,-8">灯笼</local:MyTextButton></Underline>和<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%92%9F" Margin="0,0,0,-8">钟</local:MyTextButton></Underline>上。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>不需要任何用于支撑的方块即可放置，即使周围没有方块也可以完全独立存在。</Paragraph></ListItem>
+<ListItem><Paragraph><Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE" Margin="0,0,0,-8">锁链</local:MyTextButton></Underline>能够水平或垂直放置，但不会像<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%93%81%E6%A0%8F%E6%9D%86" Margin="0,0,0,-8">铁栏杆</local:MyTextButton></Underline>一样在不同水平方向相交时形成转角。</Paragraph></ListItem>
 </List>
 
-<Paragraph>图为生成在水边的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E6%B2%99%E6%BC%A0%E6%B0%B4%E4%BA%95">沙漠水井</local:MyTextButton></Underline>。</Paragraph>
+<Paragraph>图为沿各坐标轴方向放置的<Underline><local:MyTextButton EventType="打开网页" EventData="https://zh.minecraft.wiki/w/%E9%94%81%E9%93%BE">锁链</local:MyTextButton></Underline>。</Paragraph>
 </FlowDocument>
 </FlowDocumentScrollViewer>
 <Grid VerticalAlignment="Center" Margin="6,10,0,0" HorizontalAlignment="Right">
@@ -315,7 +316,7 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
                     Data="M4 2H2v12h2V4h10V2zm2 4h12v2H8v10H6zm4 4h12v12H10zm10 10v-8h-8v8z"/>
 <TextBlock HorizontalAlignment="Right" Grid.Column="1" Text="仿生猫梦见苦力怕" FontSize="14" VerticalAlignment="Center" Foreground="{DynamicResource ColorBrush4}"/>
 </Grid>
-<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-2-3" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
+<TextBlock Margin="0,2" Grid.Column="1" HorizontalAlignment="Right" Text="最后更新: 2025-2-17" FontSize="12" Foreground="{DynamicResource ColorBrush4}"/>
 <local:MyIconTextButton Text="WIKI" ToolTip="在 Minecraft Wiki 上查看该页面" EventType="打开网页"
     EventData="{StaticResource WikiPage}" LogoScale="1.05" Logo="{StaticResource WikiIcon}" HorizontalAlignment="Left"/>
 </StackPanel>
@@ -441,22 +442,27 @@ Mfn233                                       @ Github(Mfn233) 为主页提供最
 <Border Margin="0,0,0,0" Padding="2,8" BorderThickness="1" Background="{DynamicResource ColorBrush5}" CornerRadius="5" VerticalAlignment="Top" BorderBrush="{DynamicResource ColorBrush3}" Opacity="0.7">
     <Grid Margin="10,0,0,0">
         <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#FF000000">
-                ⚠️ &quot;最新版本&quot; 板块为每次更新时同步，并不一定为最新！
+                ⚠️ &quot;最新版本&quot; 板块为每周更新时同步，并不一定为最新！
     </TextBlock>
         <TextBlock FontWeight="Bold" FontSize="12" VerticalAlignment="Center" Foreground="#00000000">
-                ⚠️ &quot;最新版本&quot; 板块为每次更新时同步，并不一定为最新！
+                ⚠️ &quot;最新版本&quot; 板块为每周更新时同步，并不一定为最新！
     </TextBlock>
     </Grid>
 </Border>
 </local:MyCard>
 <!-- NewsCard -->
 <local:MyCard Title="最新版本" CanSwap="False" IsSwaped="False" >
-<StackPanel Margin="8,35,8,15">
+<StackPanel Margin="8,38,8,15">
 <local:MyListItem Margin="10,1,10,1" ToolTip="最新正式版 点击查看该版本更新日志"
 	Logo="pack://application:,,,/images/Blocks/Grass.png" Title="最新正式版 - 1.21.4" Info="正式版"
 	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=1.21.4" Type="Clickable" /><local:MyListItem Margin="10,1,10,1" ToolTip="最新快照版 点击查看该版本更新日志"
-	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w06a" Info="快照版"
-	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=25w06a" Type="Clickable" />
+	Logo="pack://application:,,,/images/Blocks/CommandBlock.png" Title="最新快照版 - 25w07a" Info="快照版"
+	EventType="打开帮助" EventData="https://news.bugjump.net/VersionDetail.json?ver=25w07a" Type="Clickable" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush5}"  Opacity="0.7" StrokeThickness="1.2"
+     HorizontalAlignment="Center" Stretch="Fill" Margin="4,4"/>
+<local:MyListItem Margin="10,1" ToolTip="点击跳转到列表界面" LogoScale="1.04"
+Logo="https://img.picgo.net/2025/02/15/Bookshelf_JE4_BE2de3fa45de5d6d91f.png" Title="历史版本更新日志" Info="点击查看更多更新日志"
+EventType="打开帮助" EventData="https://news.bugjump.net/VersionArchiveList.json" Type="Clickable" />
 </StackPanel>
 </local:MyCard>
 <!-- end_NewsCard -->
